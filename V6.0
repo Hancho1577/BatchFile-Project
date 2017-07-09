@@ -286,7 +286,7 @@ echo │ 1:텍스트색 변경              2:프로그램 초기화
 echo │     
 echo │ 3:명령어 보이기              4:로그 관리
 echo │                          
-echo │ 5:메인변경                   6:개발자 아이스크림 사주기
+echo │ 5:메인변경                   6:문의
 echo │ 
 echo │ 7:업데이트 확인
 echo │ 
@@ -353,9 +353,9 @@ if %a%==12 goto
 
 :ice
 cls
-echo %DATE% %TIME%:  후원진입>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  문의진입>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-echo │ 후원
+echo │ 
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │                                                             
