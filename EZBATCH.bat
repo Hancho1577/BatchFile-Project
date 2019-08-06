@@ -3,13 +3,15 @@
 color b
 if not exist "C:\BATprogram" goto help
 :first
-SET DS=%DATE%
+SET DT=%DATE%
+SET TE=%TIME%
 title 간단한 프로그램
 echo.>>C:\BATprogram\BAT.txt
-echo ---------------------%DATE%----------------------->>C:\BATprogram\BAT.txt
+echo ---------------------%DATE% %TIME%----------------------->>C:\BATprogram\BAT.txt
 echo.>>C:\BATprogram\BAT.txt
-echo LOG:%DATE% 프로그램 실행!>>C:\BATprogram\BAT.txt
-echo 이 프로그램 현재 버전:5.5
+echo %DATE% %TIME%:  프로그램 실행!>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  실행 버전:5.6>>C:\BATprogram\BAT.txt
+echo 이 프로그램 현재 버전:5.6
 echo 이 프로그램은 새별님,한초님이  만들었습니다.
 echo 무단배포및 수정은 금지입니다.
 echo.
@@ -23,9 +25,9 @@ goto main
 
 :main
 cls
-echo LOG:메인이동>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  메인이동>>C:\BATprogram\BAT.txt
 echo.
-echo 프로그램 버전:5.5ㅣ컴퓨터 종료:100 l 로그:log l 명령어 보이기:Com
+echo 프로그램 버전:5.6ㅣ컴퓨터 종료:100 l 로그:log l 명령어 보이기:Com
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │ 1 : 인터넷(DNS캐쉬 청소) l 텍스트 색 변경:color 
 echo │-------------------------------------------------------------
@@ -66,7 +68,7 @@ if %a%==color goto color
 
 :color
 cls
-echo LOG:텍스트 색 변경으로 이동>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트 색 변경으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │ 텍스트색 변경                  뒤로가기:0000
 echo │-------------------------------------------------------------
@@ -107,30 +109,30 @@ if %a%==17 goto color17
 :color1
 cls
 color b
-echo LOG:텍스트색을 기본 으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 기본 으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color2
 cls
 color 1
-echo LOG:텍스트색을 파랑색 으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 파랑색 으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color3
 cls
 color 2
-echo LOG:텍스트색을 초록색 으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 초록색 으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color4
 cls
 color 3
-echo LOG:텍스트색을 옥색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 옥색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color5
 cls
-echo LOG:텍스트색을 빨강색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 빨강색으로 변경>>C:\BATprogram\BAT.txt
 color 4
 
 goto color
@@ -138,67 +140,67 @@ goto color
 :color6
 cls
 color 5
-echo LOG:텍스트색을 자주색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 자주색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color7
 cls
 color 6
-echo LOG:텍스트색을 노랑색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 노랑색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color8
 cls
 color 7
-echo LOG:텍스트색을 흰색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 흰색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color9
 cls
 color 8
-echo LOG:텍스트색을 회색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 회색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color10
 cls
 color 9
-echo LOG:텍스트색을 연한 파란색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 연한 파란색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color11
 cls
 color A
-echo LOG:텍스트색을 연한 초록색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 연한 초록색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color12
 cls
 color B
-echo LOG:텍스트색을 연한 청록색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 연한 청록색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color13
 cls
 color C
-echo LOG:텍스트색을 연한 빨강색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 연한 빨강색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color14
 cls
 color D
-echo LOG:텍스트색을 연한 자주색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 연한 자주색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color15
 cls
 color E
-echo LOG:텍스트색을 연한 노랑색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 연한 노랑색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color16
 cls
 color F
-echo LOG:텍스트색을 밝은 흰색으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 밝은 흰색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color17
@@ -207,7 +209,7 @@ echo 배경색코드글자색코드 ex)07
 set /p a=원하는 배경의 색코드를 입력하세요:
 set /p b=원하는 글자의 색코드를 입력하세요:
 color %a%%b%
-echo LOG:배경색:%a% 텍스트색:%b% 으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  배경색:%a% 텍스트색:%b% 으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 
@@ -216,7 +218,7 @@ goto color
 
 :Com
 cls
-echo LOG:명령어 보이기/안 보이기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  명령어 보이기/안 보이기>>C:\BATprogram\BAT.txt
 echo 명령어 보이기:1
 echo 명령어 안 보이게:2
 echo 뒤로가기 : 11
@@ -227,7 +229,7 @@ if %a$==11 goto main
 
 :comoff
 cls
-echo LOG:명령어 안 보이기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  명령어 안 보이기>>C:\BATprogram\BAT.txt
 @echo off
 echo 완료
 pause
@@ -235,7 +237,7 @@ goto main
 
 :comon
 cls
-echo LOG:명령어 보이기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  명령어 보이기>>C:\BATprogram\BAT.txt
 @echo on
 echo 완료
 pause
@@ -243,7 +245,7 @@ goto main
 
 :LOG1
 cls 
-echo LOG:로그 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그 목록>>C:\BATprogram\BAT.txt
 echo 로그파일 초기화 : 1
 echo 로그파일 열기 : 2
 echo 뒤로가기 : 11
@@ -255,7 +257,7 @@ if %a%==0000 goto main
 
 :LOGopen
 cls
-echo LOG:로그파일 open>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그파일 open>>C:\BATprogram\BAT.txt
 cd C:\BATprogram
 start BAT.txt
 goto LOG1
@@ -272,7 +274,7 @@ color b
 :delLOG2
 
 cls
-echo LOG:로그초기화>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그초기화>C:\BATprogram\BAT.txt
 echo 완료
 pause
 goto LOG1
@@ -283,9 +285,9 @@ goto LOG1
 
 :report
 cls
-echo LOG:업데이트 내용으로 이동>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  업데이트 내용으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
-echo │ 5.5버전 업데이트
+echo │ 5.6버전 업데이트
 echo │-------------------------------------------------------------
 echo │ 1.tree명령어 추가                     
 echo │ 2.종료목록
@@ -296,8 +298,8 @@ echo │ 6.도움말 기능
 echo │ 7.로그 기능
 echo │ 8.색 변경
 echo │ 9.앵무새 추가
-echo │
-echo │
+echo │ 10.LOG 구체화
+echo │ 11.폴더테러기 추가
 echo │
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -305,12 +307,12 @@ pause
 goto main
 
 :CMDgo
-echo LOG:CMD실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CMD실행>>C:\BATprogram\BAT.txt
 start
 goto main
 
 :DNSr
-echo LOG:인터넷 최적화 (DNS캐쉬 초기화)를 할것인가? 안할것 인가?>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  인터넷 최적화 (DNS캐쉬 초기화)를 할것인가? 안할것 인가?>>C:\BATprogram\BAT.txt
 cls
 echo DNS캐시파일을 청소하여 인터넷 속도를 향상시킵니다.
 echo 계속하시려면 y,취소하시려면n 를 입력해 주세요.
@@ -326,7 +328,7 @@ echo 이프로그램은 DNS캐시 청소 명령어 활용 cmd입니다
 echo 불이익이 발생할시 제작자와는 상관이 없습니다. 
 echo 동의하실꺼면 아무키나누루세요...
 pause
-echo LOG:DNS캐쉬 청소를 진행하셧습니다.>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  DNS캐쉬 청소를 진행하셧습니다.>>C:\BATprogram\BAT.txt
 color 0c
 cls
 ipconfig/displaydns
@@ -339,7 +341,7 @@ goto main
 
 :cancle
 cls
-echo LOG:예약종료 취소>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  예약종료 취소>>C:\BATprogram\BAT.txt
 shutdown -a
 echo 예약종료 취소완료
 pause
@@ -348,7 +350,7 @@ goto main
 
 :30
 cls
-echo LOG:30분 예약종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  30분 예약종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 1800
 echo 30분후 종료 예약 완료
 pause
@@ -357,7 +359,7 @@ goto main
 
 :1h
 cls
-echo LOG:1시간 예약종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  1시간 예약종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 3600
 echo 1시간후 종료 예약 완료
 pause
@@ -366,7 +368,7 @@ goto main
 
 :1h3s
 cls
-echo LOG:1시간30분 예약종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  1시간30분 예약종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 5400
 echo 1시간30분후 종료 예약 완료
 pause
@@ -375,7 +377,7 @@ goto main
 
 :2h
 cls
-echo LOG:2시간 예약종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  2시간 예약종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 7200
 echo 2시간후 종료 예약 완료
 pause
@@ -384,7 +386,7 @@ goto main
 
 :2h3s
 cls
-echo LOG:2시간30분 예약종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  2시간30분 예약종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 9000
 echo 2시간30분후 종료 예약 완료
 pause
@@ -394,7 +396,7 @@ goto main
 
 :3h
 cls
-echo LOG:3시간 예약종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  3시간 예약종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 10800
 echo 3시간후 종료 예약 완료
 pause
@@ -404,7 +406,7 @@ goto main
 
 :4h
 cls
-echo LOG:4시간 예약종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  4시간 예약종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 14400
 echo 4시간후 종료 예약 완료
 pause
@@ -413,10 +415,13 @@ goto main
 
 :page2
 cls 
-echo LOG:페이지2 진입>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  페이지2 진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 페이지 2
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
-echo │
-echo │ 1 : 메인 메뉴로
+echo │                                                             
+echo │ 1 : 메인 메뉴로 
 echo │ 2 : 테스트 기능     
 echo │ 3 : 테러
 echo │ 4 : 프로그램 모음                              
@@ -425,9 +430,11 @@ echo │ 6 : 개발자가 심심해서 만든것들
 echo │ 7 : 컴 종료/로그오프/절전 등등
 echo │ 8 : 인터넷 사이트 모음
 echo │ 9 : ping 테스트 (방법)
-echo │ 10 : 마인크래프트 관련 기능들
-echo │
-echo │
+echo │ 10 : 컴퓨터 에러
+echo │ 11 : 배치파일만들기
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 다음페이지:12
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 set /p a=원하는 번호를 입력하세요.:
@@ -435,22 +442,339 @@ if %a%==1 goto main
 if %a%==2 goto TEST
 if %a%==3 goto Tr
 if %a%==4 goto programs
-if %a%==5 goto CMDs
+if %a%==5 goto CMDms
+if %a%==6 goto simsim
+if %a%==7 goto shut
+if %a%==8 goto innet
+if %a%==9 goto ping
+if %a%==10 goto erro
+if %a%==11 goto batmaker 
+if %a%==12 goto page3
+if %a%==43 goto RE
+if %a%==0000 goto main
+
+:page3
+cls 
+echo %DATE% %TIME%:  페이지3 진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 페이지 3 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │                                                             
+echo │ 1 : 뒤로가기
+echo │ 2 : 덧셈     
+echo │ 3 : 
+echo │ 4 :                             
+echo │ 5 : 
+echo │ 6 : 
+echo │ 7 : 
+echo │ 8 : 
+echo │ 9 : 
+echo │ 10 : 
+echo │ 11 : 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto page2
+if %a%==2 goto plus
+if %a%==3 goto 
+if %a%==4 goto
+if %a%==5 goto
+if %a%==6 goto 
+if %a%==7 goto 
+if %a%==8 goto 
+if %a%==9 goto
+if %a%==10 goto 
+if %a%==11 goto 
+if %a%==12 goto 
+if %a%==43 goto RE
+if %a%==0000 goto main
+
+:plus
+cls
+echo %DATE% %TIME%:  덧셈 진입>>C:\BATprogram\BAT.txt
+echo 숫자만 입력해 주세요. (2개)X    (2)o
+set /p ch=총 몇개를 더하실 건가요?(2~10):
+if %ch%==2 goto plus2
+if %ch%==3 goto plus3
+if %ch%==4 goto plus4
+if %ch%==5 goto plus5
+if %ch%==6 goto plus6
+if %ch%==7 goto plus7
+if %ch%==8 goto plus8
+if %ch%==9 goto plus9
+if %ch%==10 goto plus10
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+
+
+:plus2
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /a answ=a1+a2
+echo.
+echo %a1% + %a2% = %answ%
+echo %DATE% %TIME%: %a1% + %a2% = %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+:plus3
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3
+echo.
+echo %a1% + %a2% +%a3% = %answ%
+echo %DATE% %TIME%: %a1% + %a2% +%a3% = %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+:plus4
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /p a4=네번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3+a4
+echo.
+echo %a1% + %a2% + %a3% + %a4%= %answ%
+echo %DATE% %TIME%: %a1% + %a2% + %a3% + %a4%= %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+:plus5
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /p a4=네번째로 더할 값을 입력하세요:
+set /p a5=다섯번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3+a4+a5
+echo.
+echo %a1% + %a2% + %a3% + %a4% + %a5%= %answ%
+echo %DATE% %TIME%: %a1% + %a2% + %a3% + %a4% + %a5%= %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+
+:plus6
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /p a4=네번째로 더할 값을 입력하세요:
+set /p a5=다섯번째로 더할 값을 입력하세요:
+set /p a6=여섯번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3+a4+a5+a6
+echo.
+echo %a1% + %a2% + %a3% + %a4% + %a5% + %a6%= %answ%
+echo %DATE% %TIME%: %a1% + %a2% + %a3% + %a4% + %a5% + %a6%= %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+:plus7
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /p a4=네번째로 더할 값을 입력하세요:
+set /p a5=다섯번째로 더할 값을 입력하세요:
+set /p a6=여섯번째로 더할 값을 입력하세요:
+set /p a7=일곱번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3+a4+a5+a6+a7
+echo.
+echo %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7%= %answ%
+echo %DATE% %TIME%: %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7%= %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+:plus8
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /p a4=네번째로 더할 값을 입력하세요:
+set /p a5=다섯번째로 더할 값을 입력하세요:
+set /p a6=여섯번째로 더할 값을 입력하세요:
+set /p a7=일곱번째로 더할 값을 입력하세요:
+set /p a8=여덟번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3+a4+a5+a6+a7+a8
+echo.
+echo %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7% + %a8%= %answ%
+echo %DATE% %TIME%: %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7% + %a8%= %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+
+:plus9
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /p a4=네번째로 더할 값을 입력하세요:
+set /p a5=다섯번째로 더할 값을 입력하세요:
+set /p a6=여섯번째로 더할 값을 입력하세요:
+set /p a7=일곱번째로 더할 값을 입력하세요:
+set /p a8=여덟번째로 더할 값을 입력하세요:
+set /p a9=아홉번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3+a4+a5+a6+a7+a8+a9
+echo.
+echo %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7% + %a8% + %a9%= %answ%
+echo %DATE% %TIME%: %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7% + %a8% + %a9%= %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+:plus10
+cls
+echo %DATE% %TIME%:  덧셈%ch%개 선택>>C:\BATprogram\BAT.txt
+set /p a1=첫번째로 더할 값을 입력하세요:
+set /p a2=두번째로 더할 값을 입력하세요:
+set /p a3=세번째로 더할 값을 입력하세요:
+set /p a4=네번째로 더할 값을 입력하세요:
+set /p a5=다섯번째로 더할 값을 입력하세요:
+set /p a6=여섯번째로 더할 값을 입력하세요:
+set /p a7=일곱번째로 더할 값을 입력하세요:
+set /p a8=여덟번째로 더할 값을 입력하세요:
+set /p a9=아홉번째로 더할 값을 입력하세요:
+set /p a10=열번째로 더할 값을 입력하세요:
+set /a answ=a1+a2+a3+a4+a5+a6+a7+a8+a9+a10
+echo.
+echo %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7% + %a8% + %a9% + %a10%= %answ%
+echo %DATE% %TIME%: %a1% + %a2% + %a3% + %a4% + %a5% + %a6% + %a7% + %a8% + %a9% + %a10%= %answ% 계산>>C:\BATprogram\BAT.txt
+pause
+goto page3
+
+
+:batmaker
+cls
+echo 사용자가 명령을 내린 순서대로
+echo 배치 파일을 작성합니다.
+pause
+if not exist C:\BATprogram\batmaker goto batmaker1
+if exist C:\BATprogram\batmaker goto batmaker2
+
+:batmaker1
+echo %DATE% %TIME%:  배치파일 생성>>C:\BATprogram\BAT.txt
+echo 배치파일을 생성합니다.
+cd C:\BATprogram
+md batmaker
+echo @echo off>>C:\BATprogram\batmaker\BATmaker.bat
+echo :main>>C:\BATprogram\batmaker\BATmaker.bat
+pause
+goto batmaker
+
+:batmaker2
+cls
+echo 기존 배치파일을 확인했습니다.
+echo.
+pause
+goto batmaker3
+
+:batmaker3
+cls
+echo %DATE% %TIME%:  배치파일 만들기 진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │
+echo │ 1 : 뒤로가기
+echo │ 2 : 말나오게 하기(echo)    
+echo │ 3 : 계속하려면 아무키나 누루시오(pause)
+echo │ 4 : 다음줄로(echo.)                              
+echo │ 5 : 명령
+echo │ 6 : 
+echo │ 7 : 
+echo │ 8 : 
+echo │ 9 : 
+echo │ 10 : 
+echo │ 11 : 배치파일 실행하기
+echo │
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto page2
+if %a%==2 goto echo
+if %a%==3 goto pause
+if %a%==4 goto echo.
+if %a%==5 goto command
 if %a%==6 goto simsim
 if %a%==7 goto shut
 if %a%==8 goto innet
 if %a%==9 goto ping
 if %a%==10 goto minecraft
-if %a%==11 goto 
+if %a%==11 goto startbat 
 if %a%==43 goto RE
 if %a%==0000 goto main
 
-:minecraft
+:command
+cls
+set /p comm=원하는 명령을 적으세요:
+echo echo %comm%>>C:\BATprogram\batmaker\BATmaker.bat
+
+cls
+echo 결과물을 확인하세요!
+cd C:\BATprogram\batmaker
+call BATmaker.bat
+echo %DATE% %TIME%:  배치파일에 명령어%comm%을(를) 작성 >>C:\BATprogram\BAT.txt
+pause
+goto batmaker3
+
+
+:echo.
+cls
+echo echo.>>C:\BATprogram\batmaker\BATmaker.bat
+echo 결과물
+cd C:\BATprogram\batmaker
+call BATmaker.bat
+echo %DATE% %TIME%:  배치파일에 echo. 를 작성 >>C:\BATprogram\BAT.txt
+pause
+goto batmaker3
+
+:startbat
+cls
+cd C:\BATprogram\batmaker
+call BATmaker.bat
+pause 
+goto batmaker3
+
+:echo
+cls
+set /p c=원하는 말을 적으세요:
+echo echo %c%>>C:\BATprogram\batmaker\BATmaker.bat
+echo 완료 !
+
+echo %DATE% %TIME%:  배치파일에 %c% 라는 메세지를 만듬>>C:\BATprogram\BAT.txt
+
+echo 결과물
+cd C:\BATprogram\batmaker
+call BATmaker.bat
+
+pause
+goto batmaker3
+
+:pause
+cls
+echo pause>>C:\BATprogram\batmaker\BATmaker.bat
+echo 결과물
+cd C:\BATprogram\batmaker
+call BATmaker.bat
+echo %DATE% %TIME%:  배치파일에 pause 를 작성 >>C:\BATprogram\BAT.txt
+pause
+goto batmaker3
+
+:erro
 cls 
-echo LOG:마인크래프트 목록 진입>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  컴퓨터 오류 목록 진입>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
-echo │ 1 : 마인크래프트 백업
+echo │ 1 : 식별되지 않는 네트워크(자동 수정)
 echo │ 2 :      
 echo │ 3 : 
 echo │ 4 :                               
@@ -461,11 +785,11 @@ echo │ 8 :
 echo │ 9 : 
 echo │
 echo │
-echo │
+echo │뒤로가기:11
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 set /p a=원하는 번호를 입력하세요.:
-if %a%==1 goto mcbaup
+if %a%==1 goto netknow
 if %a%==2 goto 
 if %a%==3 goto 
 if %a%==4 goto 
@@ -475,18 +799,44 @@ if %a%==7 goto
 if %a%==8 goto 
 if %a%==9 goto 
 if %a%==10 goto 
-if %a%==11 goto 
+if %a%==11 goto page2 
 if %a%==43 goto RE
 if %a%==0000 goto main
 
-:mcbaup
+:netknow
 cls
-cd C:\Users\XNOTE\AppData\Roaming
-Xcopy .minecraft C:\BATprogram
+set /p a=진행하려면 y 뒤로가려면n:
+if a==n goto erro
+if a==y goto netknowgo
+
+
+:netknowgo
+cls
+ipconfig /release
+ipconfig /renew
+netsh winsock reset
+netsh int ip reset
+ipconfig /flushdns
+ipconfig /registerdns
+netsh int tcp set heuristics disabled
+netsh int tcp set global autotuninglevel=disabled
+netsh int tcp set global rss=enabled
+netsh int tcp show global
+
+pause
+cls
+echo 완료 되었습니다.
+pause
+goto erro
+
+
+cd C:\Users\XNOTE\AppData\Roaming\.minecraft
+pkzip -rp BACUP
+oause
 echo 완료!
 
 :ping
-echo LOG:ping 테스트 진행or뒤로가기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ping 테스트 진행or뒤로가기>>C:\BATprogram\BAT.txt
 cls
 echo 다음 화면에서 나오는 
 echo '기본 게이트웨이' 를 외워주세요
@@ -496,7 +846,7 @@ if %a%==n goto page2
 
 :pingtest
 cls
-echo LOG:ping테스트 진행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ping테스트 진행>>C:\BATprogram\BAT.txt
 echo 다음 화면에서 나오는 
 echo '기본 게이트웨이' 를 외워주세요.ex)192.116.5.9
 pause
@@ -512,13 +862,13 @@ start
 echo 새 cmd 창에서 ping -t 외운 아이피 주소 를 입력해 주세요.
 echo 예시: ping -t 192.845.54.8
 pause
-echo LOG:ping테스트 진행 완료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ping테스트 진행 완료>>C:\BATprogram\BAT.txt
 goto page2
 
 
 
 :innet
-echo LOG:사이트 목록 진입>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  사이트 목록 진입>>C:\BATprogram\BAT.txt
 cls
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
@@ -552,7 +902,7 @@ if %a%==22 goto innet2
 if %a%==0000 goto main
 
 :innet2
-echo LOG:사이트 목록 2번째 페이지 진입>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  사이트 목록 2번째 페이지 진입>>C:\BATprogram\BAT.txt
 cls
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
@@ -587,7 +937,7 @@ if %a%==0000 goto main
 
 :bcs
 cls
-echo LOG:방송국 사이트 목록 진입>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  방송국 사이트 목록 진입>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : 국내 방송국 사이트
@@ -621,7 +971,7 @@ if %a%==0000 goto main
 
 :koreabcs
 cls
-echo LOG:한국 방송국 사이트 목록 진입>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  한국 방송국 사이트 목록 진입>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : KBS
@@ -655,62 +1005,62 @@ if %a%==0000 goto main
 
 :dgnews
 cls
-echo LOG:연합뉴스 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  연합뉴스 사이트 접속>>C:\BATprogram\BAT.txt
 start www.yonhapnews.co.kr
 goto koreabcs
 
 :TVz
 cls
-echo LOG:TV조선 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  TV조선 사이트 접속>>C:\BATprogram\BAT.txt
 start www.tvchosun.com
 goto koreabcs
 
 :chA
 cls
-echo LOG:채널A 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  채널A 사이트 접속>>C:\BATprogram\BAT.txt
 start m.ichannela.com
 goto koreabcs
 
 
 :MBN
 cls
-echo LOG:MBN 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  MBN 사이트 접속>>C:\BATprogram\BAT.txt
 start mbn.mk.co.kr
 goto koreabcs
 
 :tvN
 cls
-echo LOG:Tvn 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  Tvn 사이트 접속>>C:\BATprogram\BAT.txt
 start tvn.tving.com
 goto koreabcs
 
 :JTBC
 cls
 start onair.jtbc.joins.com
-echo LOG:JTBC 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  JTBC 사이트 접속>>C:\BATprogram\BAT.txt
 goto koreabcs
 
 :YTN
 cls
 start http://www.ytn.co.kr/
-echo LOG:YTN 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  YTN 사이트 접속>>C:\BATprogram\BAT.txt
 goto koreabcs
 
 :SBS
 cls
 start www.sbs.co.kr
-echo LOG:SBS 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  SBS 사이트 접속>>C:\BATprogram\BAT.txt
 goto koreabcs
 
 :MBC
 cls
 start www.imbc.com
-echo LOG:MBC 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  MBC 사이트 접속>>C:\BATprogram\BAT.txt
 goto koreabcs
 
 :hbcs
 cls
-echo LOG:해외 방송국 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  해외 방송국 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : CNN
@@ -744,7 +1094,7 @@ if %a%==0000 goto main
 
 :hk
 cls
-echo LOG:타이완 방송국 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  타이완 방송국 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : TTV
@@ -777,7 +1127,7 @@ if %a%==22 goto
 if %a%==0000 goto main
 
 :TTV
-echo LOG:TTV 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  TTV 사이트 접속>>C:\BATprogram\BAT.txt
 cls
 start http://www.ttv.com.tw/
 goto hk
@@ -785,30 +1135,30 @@ goto hk
 :CTV
 cls
 start http://beta.ctv.com.tw/
-echo LOG:CTV 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CTV 사이트 접속>>C:\BATprogram\BAT.txt
 goto hk
 
 :CTS
 cls
 start http://www.cts.com.tw/
-echo LOG:CTS 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CTS 사이트 접속>>C:\BATprogram\BAT.txt
 goto hk
 
 :FTV
 cls
 start http://www.ftv.com.tw/index.aspx
-echo LOG:FTV 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  FTV 사이트 접속>>C:\BATprogram\BAT.txt
 goto hk
 
 :PTS
 cls
 start http://www.pts.org.tw/
-echo LOG:PTS 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  PTS 사이트 접속>>C:\BATprogram\BAT.txt
 goto hk
 
 :jpan
 cls
-echo LOG:일본 방송국 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  일본 방송국 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : NHK 종합텔레비전
@@ -842,25 +1192,25 @@ if %a%==0000 goto main
 
 :hz
 cls
-echo LOG:후지 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  후지 사이트 접속>>C:\BATprogram\BAT.txt
 start http://www.fujitv.co.jp/index.html
 goto jpan
 
 :dk
 cls
 start http://www.tv-tokyo.co.jp/
-echo LOG:도쿄 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  도쿄 사이트 접속>>C:\BATprogram\BAT.txt
 goto jpan
 
 :dm
 cls
 start http://s.mxtv.jp/
-echo LOG:도쿄 메트로 폴리탄 텔레비전 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  도쿄 메트로 폴리탄 텔레비전 사이트 접속>>C:\BATprogram\BAT.txt
 goto jpan
 
 :ch
 cls
-echo LOG:중국 방송국 사이트 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  중국 방송국 사이트 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : CCTV
@@ -895,31 +1245,31 @@ if %a%==0000 goto main
 :CCTV
 cls
 start http://www.cctv.com/
-echo LOG:CCTV(방송국) 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CCTV(방송국) 사이트 접속>>C:\BATprogram\BAT.txt
 goto ch
 
 :CETV
 cls
 start http://www.cetv.edu.cn/
-echo LOG:CETV 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CETV 사이트 접속>>C:\BATprogram\BAT.txt
 goto ch
 
 :BTY
 cls
 start http://www.btime.com/btv/btvsy_index
-echo LOG:BTY 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  BTY 사이트 접속>>C:\BATprogram\BAT.txt
 goto ch
 
 :TJTY
 cls
 start http://tjtv.enorth.com.cn/
-echo LOG:TJTY 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  TJTY 사이트 접속>>C:\BATprogram\BAT.txt
 goto ch
 
 :SMG
 cls
 start http://www.smg.cn/
-echo LOG:SMG 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  SMG 사이트 접속>>C:\BATprogram\BAT.txt
 goto ch
 
 :usa
@@ -958,30 +1308,30 @@ if %a%==0000 goto main
 :ABC
 cls
 start http://abc.go.com/
-echo LOG:ABC사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ABC사이트 접속>>C:\BATprogram\BAT.txt
 goto usa
 
 :CBS
 cls
 start http://www.cbs.com/
-echo LOG:CBS 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CBS 사이트 접속>>C:\BATprogram\BAT.txt
 goto usa 
 
 :CW
 cls
 start http://www.cwtv.com/
-echo LOG:CW 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CW 사이트 접속>>C:\BATprogram\BAT.txt
 goto usa
 
 :PBS
 cls
 start http://www.pbs.org/
-echo LOG:PBS 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  PBS 사이트 접속>>C:\BATprogram\BAT.txt
 goto usa
 
 :ca
 cls
-echo LOG:캐나다 방송국 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  캐나다 방송국 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : CBC
@@ -1016,25 +1366,25 @@ if %a%==0000 goto main
 :CBC
 cls
 start http://www.cbc.ca/television/
-echo LOG:CBC 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CBC 사이트 접속>>C:\BATprogram\BAT.txt
 goto ca
 
 :SRC
 cls
 start http://ici.radio-canada.ca/television/
-echo LOG:SRC 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  SRC 사이트 접속>>C:\BATprogram\BAT.txt
 goto ca
 
 :CTV
 cls
 start http://www.ctv.ca/
-echo LOG:CTV 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CTV 사이트 접속>>C:\BATprogram\BAT.txt
 goto ca
 
 
 :hz
 cls
-echo LOG:호주 방송국 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  호주 방송국 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : ABC TV
@@ -1069,93 +1419,93 @@ if %a%==0000 goto main
 :ABCTV
 cls
 start http://www.abc.net.au/
-echo LOG:ABC(호주) 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ABC(호주) 사이트 접속>>C:\BATprogram\BAT.txt
 goto hz
 
 
 :SBSTV
 cls
 start http://www.sbs.com.au/
-echo LOG:SBS(호주) 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  SBS(호주) 사이트 접속>>C:\BATprogram\BAT.txt
 goto hz
 
 
 :ANB
 cls
 start http://www.tv-asahi.co.jp/
-echo LOG:ANB 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ANB 사이트 접속>>C:\BATprogram\BAT.txt
 goto hbcs
 
 :TBS
 cls
 start http://www.tbs.co.jp/
-echo LOG:TBS 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  TBS 사이트 접속>>C:\BATprogram\BAT.txt
 goto hbcs
 
 :NTV
 cls
 start http://www.ntv.co.jp/
-echo LOG:NTV 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  NTV 사이트 접속>>C:\BATprogram\BAT.txt
 goto hbcs
 
 :NHK
 cls
 start http://www.nhk.or.jp
-echo LOG:NHK 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  NHK 사이트 접속>>C:\BATprogram\BAT.txt
 goto hbcs
 
 :BBC
 cls
 start www.bbc.co.uk
-echo LOG:BBC 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  BBC 사이트 접속>>C:\BATprogram\BAT.txt
 goto hbcs
 
 :CNN
 cls
 start www.cnn.com
-echo LOG:CNN사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CNN사이트 접속>>C:\BATprogram\BAT.txt
 goto hbcs
 
 
 :KBS
 cls
 start http://www.kbs.co.kr/
-echo LOG:KBS 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  KBS 사이트 접속>>C:\BATprogram\BAT.txt
 goto innet
 
 :dropbox
 cls
 start https://www.dropbox.com
-echo LOG:dropbox 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  dropbox 사이트 접속>>C:\BATprogram\BAT.txt
 goto innet 
 
 :google
 cls
 start https://www.google.co.kr
-echo LOG:구글 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  구글 사이트 접속>>C:\BATprogram\BAT.txt
 goto innet
 
 :nate
 cls
 start http://www.nate.com
-echo LOG:네이트 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  네이트 사이트 접속>>C:\BATprogram\BAT.txt
 goto innet
 
 :daum
 cls
 start http://www.daum.net
-echo LOG:daum 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  daum 사이트 접속>>C:\BATprogram\BAT.txt
 goto innet
 
 :naver
 cls
 start www.naver.com
-echo LOG:네이버 사이트 접속>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  네이버 사이트 접속>>C:\BATprogram\BAT.txt
 goto innet
 
 :shut
 cls
-echo LOG:강제 종료,로그오프 등등 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  강제 종료,로그오프 등등 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │원하는 기능의 번호를 입력하시면 타이머 설정이 나옵니다.
 echo │ 1 : 뒤로가기
@@ -1188,7 +1538,7 @@ if %a%==0000 goto main
 
 :shutdowntime
 cls
-echo LOG:예약 종료 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  예약 종료 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │원하는 기능의 번호를 입력하시면 타이머 설정이 나옵니다.
 echo │ 1 : 뒤로가기
@@ -1228,7 +1578,7 @@ echo 최대 199999999초
 echo.
 echo.
 set /p a=원하시는 시간(초단위) 를 입력하세요:
-echo LOG:%a%초 예약 종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  %a%초 예약 종료>>C:\BATprogram\BAT.txt
 echo %a%초후 컴퓨터가 종료됩니다.
 shutdown -s -t %a%
 
@@ -1241,14 +1591,14 @@ shutdown -s -t 1800
 echo 30분후 종료 예약 완료
 pause
 cls
-echo LOG:30분 예약 종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  30분 예약 종료>>C:\BATprogram\BAT.txt
 goto shut
 
 :1hs
 cls
 shutdown -s -t 3600
 echo 1시간후 종료 예약 완료
-echo LOG:1시간 종료 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  1시간 종료 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1257,7 +1607,7 @@ goto shut
 cls
 shutdown -s -t 5400
 echo 1시간30분후 종료 예약 완료
-echo LOG:1시간 30분 종료 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  1시간 30분 종료 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1266,7 +1616,7 @@ goto shut
 cls
 shutdown -s -t 7200
 echo 2시간후 종료 예약 완료
-echo LOG:2시간 종료 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  2시간 종료 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1275,7 +1625,7 @@ goto shut
 cls
 shutdown -s -t 9000
 echo 2시간30분후 종료 예약 완료
-echo LOG:2시간 30분 종료 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  2시간 30분 종료 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1285,7 +1635,7 @@ goto shut
 cls
 shutdown -s -t 10800
 echo 3시간후 종료 예약 완료
-echo LOG:3시간 종료 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  3시간 종료 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1295,7 +1645,7 @@ goto shut
 cls
 shutdown -s -t 14400
 echo 4시간후 종료 예약 완료
-echo LOG:4시간 종료 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  4시간 종료 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1304,7 +1654,7 @@ goto shut
 
 :l
 cls
-echo LOG:로그오프 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │원하는 기능의 번호를 입력하시면 타이머 설정이 나옵니다.
 echo │ 1 : 뒤로가기
@@ -1340,7 +1690,7 @@ if %a%==0000 goto main
 cls
 shutdown -l -t 1800
 echo 30분후  예약 완료
-echo LOG:로그오프 30 분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 30 분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1349,7 +1699,7 @@ goto shut
 cls
 shutdown -l -t 3600
 echo 1시간후  예약 완료
-echo LOG:로그오프 1시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 1시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1358,7 +1708,7 @@ goto shut
 cls
 shutdown -l -t 5400
 echo 1시간30분후  예약 완료
-echo LOG:로그오프 1시간 30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 1시간 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1367,7 +1717,7 @@ goto shut
 cls
 shutdown -l -t 7200
 echo 2시간후  예약 완료
-echo LOG:로그오프 2시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1376,7 +1726,7 @@ goto shut
 cls
 shutdown -l -t 9000
 echo 2시간30분후  예약 완료
-echo LOG:로그오프 2시간 30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 2시간 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1386,7 +1736,7 @@ goto shut
 cls
 shutdown -l -t 10800
 echo 3시간후  예약 완료
-echo LOG:로그오프 3시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 3시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1396,20 +1746,20 @@ goto shut
 cls
 shutdown -l -t 14400
 echo 4시간후 예약 완료
-echo LOG:로그오프 4시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 4시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
 
 :rightnowl
 cls
-echo LOG:로그오프 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  로그오프 실행>>C:\BATprogram\BAT.txt
 shutdown -l -t 0
 goto shut
 
 :g
 cls
-echo LOG:재부팅(g) 목록 >>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 목록 >>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │원하는 기능의 번호를 입력하시면 타이머 설정이 나옵니다.
 echo │ 1 : 뒤로가기
@@ -1445,7 +1795,7 @@ if %a%==0000 goto main
 cls
 shutdown -g -t 1800
 echo 30분후  예약 완료
-echo LOG:재부팅(g)30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g)30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1454,7 +1804,7 @@ goto shut
 cls
 shutdown -g -t 3600
 echo 1시간후  예약 완료
-echo LOG:재부팅(g) 1시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 1시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1463,7 +1813,7 @@ goto shut
 cls
 shutdown -g -t 5400
 echo 1시간30분후  예약 완료
-echo LOG:재부팅(g) 1시간 30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 1시간 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1472,7 +1822,7 @@ goto shut
 cls
 shutdown -g -t 7200
 echo 2시간후  예약 완료
-echo LOG:재부팅(g) 2시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1481,7 +1831,7 @@ goto shut
 cls
 shutdown -g -t 9000
 echo 2시간30분후  예약 완료
-echo LOG:재부팅(g) 2시간30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 2시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1491,7 +1841,7 @@ goto shut
 cls
 shutdown -g -t 10800
 echo 3시간후  예약 완료
-echo LOG:재부팅(g) 3시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 3시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1500,14 +1850,14 @@ goto shut
 :4hlg
 cls
 shutdown -g -t 14400
-echo LOG:재부팅(g) 4시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 4시간 예약>>C:\BATprogram\BAT.txt
 echo 4시간후 예약 완료
 pause
 cls
 goto shut
 
 :rightnowg
-echo LOG:재부팅(g) 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅(g) 실행>>C:\BATprogram\BAT.txt
 cls
 shutdown -g -t 0
 goto shut
@@ -1515,7 +1865,7 @@ goto shut
 
 :r
 cls
-echo LOG:재부팅 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 목록>>C:\BATprogram\BAT.txt
 cls
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │원하는 기능의 번호를 입력하시면 타이머 설정이 나옵니다.
@@ -1552,7 +1902,7 @@ if %a%==0000 goto main
 cls
 shutdown -r -t 1800
 echo 30분후  예약 완료
-echo LOG:재부팅 30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1561,7 +1911,7 @@ goto shut
 cls
 shutdown -r -t 3600
 echo 1시간후  예약 완료
-echo LOG:재부팅 1시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 1시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1570,7 +1920,7 @@ goto shut
 cls
 shutdown -r -t 5400
 echo 1시간30분후  예약 완료
-echo LOG:재부팅 1시간30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 1시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1579,7 +1929,7 @@ goto shut
 cls
 shutdown -r -t 7200
 echo 2시간후  예약 완료
-echo LOG:재부팅 2시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1588,7 +1938,7 @@ goto shut
 cls
 shutdown -r -t 9000
 echo 2시간30분후  예약 완료
-echo LOG:재부팅 2시간30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 2시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1598,7 +1948,7 @@ goto shut
 cls
 shutdown -r -t 10800
 echo 3시간후  예약 완료
-echo LOG:재부팅 3시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 3시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1608,20 +1958,20 @@ goto shut
 cls
 shutdown -r -t 14400
 echo 4시간후 예약 완료
-echo LOG:재부팅 4시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 4시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
 
 :rightnowr
-echo LOG:재부팅 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  재부팅 실행>>C:\BATprogram\BAT.txt
 cls
 shutdown -r -t 0
 goto shut
 
 :h
 cls
-echo LOG:절전모드 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 목록>>C:\BATprogram\BAT.txt
 cls
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │원하는 기능의 번호를 입력하시면 타이머 설정이 나옵니다.
@@ -1658,7 +2008,7 @@ if %a%==0000 goto main
 cls
 shutdown -h -t 1800
 echo 30분후  예약 완료
-echo LOG:절전모드 30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1666,7 +2016,7 @@ goto shut
 :1hh
 cls
 shutdown -h -t 3600
-echo LOG:절전모드 1시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 1시간 예약>>C:\BATprogram\BAT.txt
 echo 1시간후  예약 완료
 pause
 cls
@@ -1676,7 +2026,7 @@ goto shut
 cls
 shutdown -h -t 5400
 echo 1시간30분후  예약 완료
-echo LOG:절전모드 1시간30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 1시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1685,7 +2035,7 @@ goto shut
 cls
 shutdown -h -t 7200
 echo 2시간후  예약 완료
-echo LOG:절전모드 2시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
 goto shut
@@ -1693,7 +2043,7 @@ goto shut
 :2h3sh
 cls
 shutdown -h -t 9000
-echo LOG:절전모드 2시간30분 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 2시간30분 예약>>C:\BATprogram\BAT.txt
 echo 2시간30분후  예약 완료
 pause
 cls
@@ -1703,7 +2053,7 @@ goto shut
 :3hh
 cls
 shutdown -h -t 10800
-echo LOG:절전모드 3시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 3시간 예약>>C:\BATprogram\BAT.txt
 echo 3시간후  예약 완료
 pause
 cls
@@ -1712,7 +2062,7 @@ goto shut
 :4hh
 cls
 shutdown -h -t 14400
-echo LOG:절전모드 4시간 예약>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 4시간 예약>>C:\BATprogram\BAT.txt
 echo 4시간후 예약 완료
 pause
 cls
@@ -1722,14 +2072,14 @@ goto shut
 cls
 
 shutdown -h -t 0
-echo LOG:절전모드 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  절전모드 실행>>C:\BATprogram\BAT.txt
 cls
 goto shut
 
 
 :i
 cls
-echo LOG:원격 종료 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  원격 종료 목록>>C:\BATprogram\BAT.txt
 cls
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │원하는 기능의 번호를 입력하시면 타이머 설정이 나옵니다.
@@ -1823,14 +2173,14 @@ goto shut
 :rightnowi
 cls
 shutdown -i -t 0
-echo LOG:원격종료 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  원격종료 실행>>C:\BATprogram\BAT.txt
 cls
 goto shut
 
 
 :simsim
 cls
-echo LOG:개발자가 심심해서 만든 기능들 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  개발자가 심심해서 만든 기능들 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : 뒤로가기
@@ -1864,7 +2214,7 @@ if %a%==0000 goto main
 :parrot
 cls
 echo [앵무새]아무말이나 해봐요
-echo LOG:앵무새 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  앵무새 실행>>C:\BATprogram\BAT.txt
 goto parrot2
 
 :parrot2
@@ -1875,14 +2225,14 @@ set /p a=원하는 말:
 if %a%==0000 goto main
 echo.
 echo [앵무새]%a%
-echo LOG:앵무새에게 "%a%" 라고 말하셧 습니다.>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  앵무새에게 "%a%" 라고 말하셧 습니다.>>C:\BATprogram\BAT.txt
 goto parrot2
 
 
 
 
 :net
-echo LOG:net>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  net>>C:\BATprogram\BAT.txt
 cls
 echo 인터넷 연결을 해제 해버립니다.
 echo.
@@ -1906,7 +2256,7 @@ if %a%==0000 goto main
 
 :netgo
 cls
-echo LOG:네트워크 연결 해제>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  네트워크 연결 해제>>C:\BATprogram\BAT.txt
 cls
 ipconfig/release
 echo 실행 완료......
@@ -1929,7 +2279,7 @@ goto Tr
 
 :CMDdo
 cls
-echo LOG:CMD 도배를 하시겠습니까?>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CMD 도배를 하시겠습니까?>>C:\BATprogram\BAT.txt
 echo are you ready?
 echo y/n
 
@@ -1939,7 +2289,7 @@ if %a%==y goto CMDdo2
 if %a%==0000 goto main
 
 :CMDdo2
-echo LOG:CMD도배 시작>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CMD도배 시작>>C:\BATprogram\BAT.txt
 goto CMDdo3
 
 
@@ -1957,7 +2307,7 @@ goto CMDdo3
 
 :joclack
 cls
-echo LOG:문상 크랙기 실행 (장난용)>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  문상 크랙기 실행 (장난용)>>C:\BATprogram\BAT.txt
 color 5a
 
 echo 문상 크랙기 86.886V
@@ -1990,28 +2340,81 @@ echo %random%%random%%random%%random%%random%%random%%random%%random%%random%%ra
 
 goto A
 
-:CMDs
-echo LOG:CMD 명령어들 목록>>C:\BATprogram\BAT.txt
+:CMDms
 cls
+echo 명령어 사용법을 알고,사용 용도를 아시는분만
+echo 진행하시기 바랍니다.
+pause
+echo 명령어 사용법을 알고,사용 용도를 아시는분만
+echo 진행하시기 바랍니다.
+pause
+goto CMDs
+
+:CMDs
+cls
+echo %DATE% %TIME%:  CMD명령어 목록 진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ CMD명령어 목록
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
-echo │
-echo │ 1 : EXIT
+echo │                                                             
+echo │ 1 :  기본 명령어
+echo │ 2 :  네트워크 관련 명령어
+echo │ 3 : 
+echo │ 4 :                             
+echo │ 5 : 
+echo │ 6 : 
+echo │ 7 : 
+echo │ 8 : 
+echo │ 9 : 
+echo │ 10 : 
+echo │ 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 뒤로가기:11
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto CMDn
+if %a%==2 goto CMDnetwork
+if %a%==3 goto 
+if %a%==4 goto 
+if %a%==5 goto 
+if %a%==6 goto 
+if %a%==7 goto 
+if %a%==8 goto 
+if %a%==9 goto 
+if %a%==10 goto 
+if %a%==11 goto page2
+if %a%==0000 goto main
+
+:CMDn
+cls
+cls
+echo %DATE% %TIME%:  CMD명령어 목록-기본>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ CMD명령어 목록(기본)
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │                                                             
+echo │ 1 :  
 echo │ 2 : ipconfig
 echo │ 3 : diskpart
-echo │ 4 : msconfig                             
+echo │ 4 : msconfig                    
 echo │ 5 : tree(실행 위치)
 echo │ 6 : tree(C드라이브 위치)
 echo │ 7 : netstat
 echo │ 8 : 
-echo │
-echo │
+echo │ 9 : 
+echo │ 10 : 
 echo │ 
-echo │
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 뒤로가기:11
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
 set /p a=원하는 번호를 입력하세요.:
-if %a%==1 goto page2
+if %a%==1 goto 
 if %a%==2 goto ipconfig
 if %a%==3 goto diskpart
 if %a%==4 goto msconfig
@@ -2021,10 +2424,164 @@ if %a%==7 goto netstat
 if %a%==8 goto 
 if %a%==9 goto 
 if %a%==10 goto 
-if %a%==11 goto 
+if %a%==11 goto CMDs
 if %a%==0000 goto main
 
-:
+:CMDnetwork
+cls
+cls
+echo %DATE% %TIME%:  CMD명령어 목록-네트워크 관련>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 네트워크 관련 CMD명령어
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │                                                             
+echo │ 1 : ipconfig
+echo │ 2 : ipconfig /release
+echo │ 3 : ipconfig /renew
+echo │ 4 : ipconfig /flushdns
+echo │ 5 : ipconfig /registerdns    
+echo │ 6 : netsh winsock reset
+echo │ 7 : netsh int ip reset
+echo │ 8 : netsh int tcp set heuristics disabled
+echo │ 9 : netsh int tcp set global autotuninglevel=disabled
+echo │ 10 : netsh int tcp set global rss=enabled
+echo │  
+echo │ 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 뒤로가기:11         다음페이지:12
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto ipconfig
+if %a%==2 goto ipconfigrelease
+if %a%==3 goto ipconfigrenew
+if %a%==4 goto ipconfigflushdns
+if %a%==5 goto ipconfigregisterdns
+if %a%==6 goto netshwinsockreset
+if %a%==7 goto netshintipreset
+if %a%==8 goto netshinttcpsetheuristicsdisabled
+if %a%==9 goto netshinttcpsetglobalautotuningleveldisabled
+if %a%==10 goto netshinttcpsetglobalrssenabled
+if %a%==11 goto CMDs
+if %a%==12 goto CMDnetwork2
+if %a%==0000 goto main
+
+
+:ipconfig
+cls
+ipconfig
+
+pause
+goto CMDnetwork
+
+:ipconfigrelease
+cls
+ipconfig /release
+
+pause
+goto CMDnetwork
+
+:ipconfigrenew
+cls
+ipconfig /renew
+pause
+goto CMDnetwork
+
+:ipconfigflushdns
+cls
+ipconfig /flushdns
+pause
+goto CMDnetwork
+
+:ipconfigregisterdns
+cls
+ipconfig /registerdns
+pause
+goto CMDnetwork
+
+:netshwinsockreset
+cls
+netsh winsock reset
+pause
+goto CMDnetwork
+
+:netshintipreset
+cls
+netsh int ip reset
+pause
+goto CMDnetwork
+
+:netshinttcpsetheuristicsdisabled
+cls
+netsh int tcp set heuristics disabled
+pause
+goto CMDnetwork
+
+:netshinttcpsetglobalautotuningleveldisabled
+cls
+netsh int tcp set global autotuninglevel=disabled
+pause
+goto CMDnetwork
+
+:netshinttcpsetglobalrssenabled
+cls
+netsh int tcp set global rss=enabled
+pause
+goto CMDnetwork
+
+
+
+:CMDnetwork2
+cls
+cls
+echo %DATE% %TIME%:  CMD명령어 목록-네트워크 관련2>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 네트워크 관련 CMD명령어2
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │                                                             
+echo │ 1 : netsh int tcp show global
+echo │ 2 : 
+echo │ 3 : 
+echo │ 4 :                   
+echo │ 5 : 
+echo │ 6 : 
+echo │ 7 : 
+echo │ 8 : 
+echo │ 9 : 
+echo │ 10 : 
+echo │ 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 뒤로가기:11
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto netshinttcpshowglobal
+if %a%==2 goto 
+if %a%==3 goto 
+if %a%==4 goto 
+if %a%==5 goto 
+if %a%==6 goto 
+if %a%==7 goto
+if %a%==8 goto 
+if %a%==9 goto 
+if %a%==10 goto 
+if %a%==11 goto CMDnetwork
+if %a%==0000 goto main
+
+:netshinttcpshowglobal
+cls
+netsh int tcp show global
+pause
+goto CMDnetwork
+
+
+
+
+:??
 cls
 
 puase
@@ -2033,7 +2590,7 @@ goto CMDs
 :netstat
 cls
 netstat
-echo LOG:netstat 명령 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  netstat 명령 실행>>C:\BATprogram\BAT.txt
 pause
 goto CMDs
 
@@ -2041,27 +2598,27 @@ goto CMDs
 cls
 cd C:\
 tree
-echo LOG:C드라이브에서 tree명령어 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  C드라이브에서 tree명령어 실행>>C:\BATprogram\BAT.txt
 pause
 goto CMDs
 
 :tree
 cls
 tree
-echo LOG:tree 명령어 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  tree 명령어 실행>>C:\BATprogram\BAT.txt
 pause
 goto CMDs
 
 :msconfig
 cls
 msconfig
-echo LOG:msconfig 명령어 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  msconfig 명령어 실행>>C:\BATprogram\BAT.txt
 goto Cmds
 
 :ipconfig
 cls
 ipconfig
-echo LOG:ipconfig 명령어 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ipconfig 명령어 실행>>C:\BATprogram\BAT.txt
 pause
 goto CMDs
 
@@ -2069,13 +2626,13 @@ goto CMDs
 cls
 diskpart
 echo 명령 실행 완료
-echo LOG:diskpart 명령어 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  diskpart 명령어 실행>>C:\BATprogram\BAT.txt
 pause
 goto CMDs
 
 :programs
 cls
-echo LOG:프로그램들 목록>>C:\BATprogram\BAT.txt 
+echo %DATE% %TIME%:  프로그램들 목록>>C:\BATprogram\BAT.txt 
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : 뒤로가기
@@ -2086,9 +2643,9 @@ echo │ 5 : 캡쳐도구
 echo │ 6 : 워드패드        
 echo │ 7 : 그림판
 echo │ 8 : 문자표
-echo │
-echo │
-echo │
+echo │ 9 : 인터넷 연결 문제해결사
+echo │ 10 : 들어오는 연결 문제해결사
+echo │ 11 : 네트워크 어댑터 문제해결사
 echo │
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -2101,43 +2658,58 @@ if %a%==5 goto SnippingTool
 if %a%==6 goto wordpad
 if %a%==7 goto mspaint
 if %a%==8 goto harmap
-if %a%==9 goto 
-if %a%==10 goto 
-if %a%==11 goto 
+if %a%==9 goto ndw
+if %a%==10 goto ndc
+if %a%==11 goto ndna
 if %a%==0000 goto main
+
+:ndw
+cls
+msdt.exe -id NetworkDiagnosticsWeb
+goto programs
+
+:ndc
+cls
+msdt.exe -id NetworkDiagnosticsInbound
+goto programs
+
+:ndna
+cls
+msdt.exe -id NetworkDiagnosticsNetworkAdapter
+goto programs
 
 :harmap
 cls
 cd %windir%\system32
 charmap.exe
-echo LOG:문자표 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  문자표 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :mspaint
 cls
 cd %windir%\system32
 mspaint.exe
-echo LOG:그림판 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  그림판 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :wordpad
 cls
 cd %ProgramFiles%\Windows NT\Accessories
 wordpad.exe
-echo LOG:워드패드 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  워드패드 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :SnippingTool
 cls
 cd %windir%\system32
 SnippingTool.exe
-echo LOG:캡쳐도구 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  캡쳐도구 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :Taskmgr
 cls
 cd C:\WINDOWS\system32
-echo LOG:작업관리자 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  작업관리자 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 
@@ -2145,19 +2717,19 @@ goto programs
 cls
 cd C:\WINDOWS\system32
 notepad.exe
-echo LOG:메모장 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  메모장 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 
 :Tr
 cls
-echo LOG:테러기능 목록>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  테러기능 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1.뒤로가기
 echo │ 2.CMD 테러
 echo │ 3.CMD 테러(매우강함)(실행 하지 마시길 바랍니다)
-echo │ 4.바탕화면 테러기
+echo │ 4.폴더 테러기
 echo │ 5.인터넷 연결 해제
 echo │         
 echo │
@@ -2187,7 +2759,7 @@ cls
 goto page2
 
 :CMD
-echo LOG:CMD테러 (약함) >>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CMD테러 (약함) >>C:\BATprogram\BAT.txt
 cls
 start
 start
@@ -2247,7 +2819,7 @@ start
 
 
 :CMD2
-echo LOG:CMD테러 (매우강함)>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  CMD테러 (매우강함)>>C:\BATprogram\BAT.txt
 START %0
 
 
@@ -2256,7 +2828,7 @@ goto Tr
 
 :BT
 cls
-echo LOG:바탕화면 테러를 하시겠습니까?>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  바탕화면 테러를 하시겠습니까?>>C:\BATprogram\BAT.txt
 echo  이 기능은 반자동(?) 입니다.
 pause
 echo 이 기능은 폴더를 생성하여 테러하는 방식 입니다. 사용법은 도움말을 참고하세요.
@@ -2267,247 +2839,42 @@ if %a%==3 goto BThelp
 if %a%==0000 goto main
 
 :BTgo
-echo LOG:바탕화면 테러 실행>>C:\BATprogram\BAT.txt
-md sssssssssssssssssssssssssssssssssssssss
-md 껄껄껄
-md 껄ㅁ
-md 껄ㅇ
-md 껄ㄹㅇㄴㅇ
-md 껄21324
-md 껄544643q24
-md 껄6578762435665432
-md 껄43532	45654321	456
-md 껄2454323qw34rwq23r
-md 껄23r23rewr32rwer23
-md 껄rewrw3wr 8 y78t 87t 87t87tr8f 7t67tyu te567r t8y9오후 6:04 2017-05-213 w35drft87 y86esx tyugt6r5e5 tyf7t 5e45drtfy e45rty rftyg r56tfvygft vyg오후 6:04 2017-05-21오후 6:04 2017-05-21 ewtqyrtyadsty r dtyfya trtfy yf ydaghdsv tf yttfa s87 ywfau fuysf uyyafuyfsu fyuaf d65 5 56465 4654 654 654 6546458 645 645 5648 645 564 654 624126 541625 878461 654132987465132 5689645132 68964513 4879645132 4846513 5689465132 4897 645158 946513 5684 54697 4657 986456 879465 641 366 45136987 63
-md 껄sdasdasdasd sa ds
-md 껄adasdfsdsdfsdfs 
-md 껄fgtdfhdfg
-md 껄fsadfadsghtthaeze
-md 껄fWFDFdf sd
-md 껄fdsfgdgdhdfasds
-md 껄afdsfsdgfdggfdh
-md 껄dsadfvdvbxdfbsd
-md 껄fvdfvffdsvsdfvafd
-md 껄234r2423
-md 껄r43r43f43
-md 껄rwer
-md 껄wrr rre
-md 껄rfewf2erfew
-md 껄r32wrew
-md 껄r3wrewr436ty56tyu
-md 껄tf6yuft
-md 껄fytu67
-md 껄fuy7tytuf7urdudryst5yset5tey5s
-md 껄5sy5sy
-md 껄y5ssy5sy5
-md 껄tyrdydrtydrydu7uyudrtd6y5rye5s
-md 껄5rstes5ye5syut6s
-md 껄ryst5etyes5
-md 껄yst
-md 껄e5tsyys5t
-md 껄yssry
-md 껄5ysrtrtet5rsrt5
-md 껄5y5sytrt5
-md 껄et5
-md 껄t5s
-md 껄t5re
-md 껄rtes
-md 껄ter
-md 껄rte
-md 껄tre
-md 껄srt
-md 껄rtse
-md 껄re
-md 껄rets
-md 껄e
-md 껄rtrt
-md 껄gdrtdg
-md 껄trd
-md 껄trd
-md 껄trdg
-md 껄trgd
-md 껄rtgdtrdg
-md 껄trdgtrdgtr
-md 껄crttg
-md 껄trghhry
-md 껄rtrghrfdgfcrdg
-md 껄rretfcrdhgcrfdhgfrd
-md 껄rretrtertehrfdh
-md 껄rewrettrgrdth
-md 껄sdardth
-md 껄sasdafdhtrfdghgffb
-md 껄xdcscfrgthdhtrfgdg
-md 껄hjgfdghfdshrtd
-md 껄sfgdefghtr
-md 껄fgfrgfdsfd
-md 껄ssfsdfdisdrthduafghdsfgfdsads
-md 껄sdfdafdfasfdsthrd
-md 껄fdasdsfafdsthr
-md 껄fdassdffsda
-md 껄fsdasdaffdsa
-md 껄fasdfdsafdsafdsfsdadfs
-md 껄fsdafsdafsda
-md 껄sdffsdfds
-md 껄fdsadfsadfsafdas
-md 껄fdasdfsdfas
-md 껄dafsfdasfdsfda
-md 껄sfdasfdas
-md 껄dfasdfsadafsfdas
-md 껄fdsadfsafsdafsda
-md 껄fdsfafadg
-md 껄gfafgad
-md 껄fgafgagafsdg
-md 껄fggfadfgdzgadsgseffsefsdg
-md 껄fgzegfsfsegsfgefsegfsedg
-md 껄fsegfgsefsgefsge
-md 껄fgresfgssrgefgsfsg
-md 껄fsedgfregsfgege
-md 껄fsgfgrfssrgesgrerge
-md 껄gresrgesergsgresgresgrse
-md 껄srgrgsgrrsrgsrgs
-md 껄sgrrgsgr
-md 껄sgrrsggrs
-md 껄grsrgs
-md 껄esrgrsg
-md 껄rsg
-md 껄srgsrg
-md 껄rgsa
-md 껄rgsfs
-md 껄rgsfg
-md 껄ㄴㅁㅇㅁㄴㅇㅁ
-md 껄ㄴㅇㄴㅁㅇ
-md 껄ㄴㅁㅇㅁㄴㅇㅇㄹㄴㄷㅎㄱㅇㄹ
-md 껄ㄱㄹㄴㅇ
-md 껄ㄹㅇㄴ
-md 껄ㄹㄴㅇㄹㅇㅎ
-md 껄ㄹㅇㄹㅇㄱ
-md 껄ㄴㄹㅇㅎㄹㄴㅇㄷㄹㅇ
-md 껄ㄴㄴㄹㄷㅇㄴㄷㄹㅇㄹㄷㄴㅇ
-md 껄ㄷㄺㄹㄷㄴㅇㄹㄷㅇ
-md 껄ㄱㄷㄹㄹㄷㄱㄴㄷㄹㄺㄷㄹㄴㄷㅇㄴㄷㄹㅇ
-md 껄ㄺㄷㄹㄷㄴㄴㄹㄷㄹ
-md 껄ㄴㄷㄹㄷㄹㄷㄴㄺㄷㅇㄹㄴㄷ
-md 껄ㅇㄹㄴㄷㅇㄹㄴㄷㅇㄹㅇㄴㄷ
-md 껄ㄹㄴㅇㄷㄹㄴㅇㄷㄴㄹㄷㅇ
-md 껄ㄴㄹㄷㅇㄹㄴㄷㅇㄺㄷㅇㄴ
-md 껄ㄴㄷㄱㄹㄺㄷㄹㄴㄷㅇㄹㄴㄷㅇ
-md 껄ㄹㄷㄴㅇㄹㄷㄱㅇㄺㄷㅇ
-md 껄ㄺㄷㄹㄴㄷㄱㄹㄷㄴㄺㄷ
-md 껄ㅎ
-md 껄ㄷㄴㅇㄱ
-md 껄ㄹㄴㅇ
-md 껄ㅎㄱㄴㄷㄱㅎㄴㄱㅎ
-md 껄ㄷㄴㅀㄶㄱㄴ
-md 껄ㅇㅎㅇㅎㄹㅊㅇ
-md 껄ㅠㅎㅍㄹㅊㄹㅊㅎㅍㄹㅊ
-md 껄륲츄
-md 껄ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅍ
-md 껄ㅎㄹㅇㅀ
-md 껄ㅍ
-md 껄호
-md 껄ㅀ
-md 껄ㄹㄹ
-md 껄ㅎㄴㅇㄹ
-md 껄ㄴㅇㅇㄴㄹdfs
-md 껄dfsfds
-md 껄ds
-md 껄fdg
-md 껄fdsgsdfgsrd
-md 껄sdrg
-md 껄f
-md 껄ㅗgfd
-md 껄ㅎfd
-md 껄ㄹgfdd
-md 껄ㅇ
-md 껄ㄴ
-md 껄ㅁ
-md 껄ㅇㅁ
-md 껄ㅁㅇ
-md 껄ㅁㅁㅇ
-md 껄ㅁㅇㄹ
-md 껄ㅁㅎㅎ
-md 껄ㅁㄱㄷㅎㄴㅇ
-md 껄ㅁㅇㄹㄴㅇ
-md 껄ㅁㄹㅇㄴ
-md 껄ㅁㅇㄹㅇ
-md 껄ㅁㄴㅀㅎㅁㄷㅁ
-md 껄ㅁㅎㄷㅁㄱ
-md 껄ㅁㄴㄷㅎㄹ
-md 껄ㅁㄴㅇ
-md 껄ㅁㄷ홓ㄱ
-md 껄ㅁㅇㄴ
-md 껄ㅁㅋ
-md 껄ㅁㄹ호
-md 껄ㅁㅇㄴ
-md 껄ㅁㅇㅁㅇㄹㄴ
-md 껄ㅁㅎ
-md 껄ㅁㄴㅇ
-md 껄ㅁㅇㄹ
-md 껄ㅁㄴㅇ
-md 껄ㅁㄴ
-md 껄ㅁㅇ
-md 껄ㅁㄹ
-md 껄ㅁㄶ
-md 껄ㅁㅇㄴㄹㅇㅎㅎ
-md 껄ㅁㄹㅇ
-md 껄ㅁㄴㄹ
-md 껄ㅁㅎ
-md 껄ㅁㄹㅇㄴ
-md 껄ㅁㄹ
-md 껄ㅁㅎ
-md 껄ㅁㅇㄴㅁㄹ
-md 껄ㅁㅎ
-md 껄ㅁㄹㄹㅇㄴ ㄴㅁ어ㅗㅓㄴ ㅏㅓㅁㄴ아ㅓ ㅑㄴ몽ㅍ혐ㄴ 포 ㅇㅍ 초ㅕㅠ ㅛㅕㅗㅠㅎ ㅕㅛㅅㅎㅍ ㅛㅇ굑ㄹㅇㅊㄹ용ㄹ ㅛㄱ ㅇ ㄴㄱㅇㅅㅍㅀㅊ ㅇㄱㅇㅌ  ㅌㄱㅇ ㅌㅅㅌ ㄱ욭 ㅛㅕㅅㅎ ㅇ촐 쇼ㅅㅅ롷ㅇ표ㅕㅓ셧 여ㅛㅓ ㅗㅎ러 ㅎ어ㅛ 6ㅕㅛㅓㅍ ㅗㅓㅍ ㄾㄹ호 으ㅓㅛㅅ 뇨 여ㅓㅕ ㅅ ㅎ ㅕ ㅅ어 ㄽ 료 ㅌ ㅓㅗ ㅅ허 홍ㅎ처ㅗ ㄹ홍 로옿 오옹 ㅗㅎㅎㄳㅇㄹ  ㅇㄹㅇ ㅕㅎ여오ㅛㅇ요ㅗㅓ엋 ㅛㅓㅗㄹ오ㅓ어 ㅗ오옿옿ㅇ로 오ㅗㅎ어호ㅗㅎ ㅇ
-md 껄ㅁㄹㄹ
-md 껄ㅁㄹㅀㄹㄹ
-md 껄ㅁㄹㄹㅁ
-md 껄ㅁㅇㄹㄴㄴㅇㅁ
-md 껄ㅁㄹㅀㅇㄴㅁㅇㄴ
-md 껄ㅁㄴㄴㅁㅇㅁㄴ
-md 껄ㅁㄹㅇㅇㄴㅁ
-md 껄ㅁㅇ
-md 껄ㅁㅁㄴㅇ
-md 껄ㅁㄴㅁㅇㅁㄴ
-md 껄ㅁㅇㄴㄹㄴㄹ
-md 껄ㅁㅎㅇㄹ
-md 껄ㅁㄹㅇㄴ
-md 껄ㅁㄴㅇㅀㅎㄹㅇㅎㄹㄷㅇ
-md 껄ㅁㅎㄴㄷㄱ
-md 껄ㅁㅎㄱㄷ
-md 껄ㅁㄱㅎㄴㄷ
-md 껄ㅁㄱㅎㄷ
-md 껄ㅁㄱㅎㄷㄴ
-md 껄ㅁㄱㅎㄴㄷ 
-md dsa
-md hdiuashdi
-md ㅇㅁ너안ㅁ
-md LLAOSKO
-md HELLO
-md IDONTKNOW
-md DDDDDDDDDDDDDD
-md 수 ㅇㄴ멍남언밍ㄴ마
-md 정 ㅈ어마ㅣㅓ나ㅣㅓㅇ미ㅏ
-md 하 ㅇㄴ마어ㅣㄴ마어먀잼
-md 지 만어ㅏㅣㄴ머안머얌너
-md 마 어내먀언먀ㅐ언먀ㅐㅇㅁㄴ
-md 세 안미ㅓ아ㅣㅁㄴ어ㅣㅁㄴㅇ
-md 요 ㅇ냠여ㅐㄴ며앰
+set /p a=원하시는 경로를 입력하세요:
+if not exist %a% goto BTerro
+if %a%==0000 BT
+if exist %a% goto BTgogo
+
+
+:BTgogo
+echo %DATE% %TIME%:  %a%에 폴더 테러 실행>>C:\BATprogram\BAT.txt
+cd %a%
+md %random%%random%%random%
+goto BTgogo
+
+
+:BTerro
+경로를 찾을 수 없습니다.
+pasue
+goto BT
+
+ 
 
 :BThelp
 cls
-echo LOG:바탕화면 테러 도움말 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  바탕화면 테러 도움말 실행>>C:\BATprogram\BAT.txt
 echo 원하시는 폴더에 테러하시려면?
-echo bat파일 모음 프로그램(bat)파일을
-echo 원하는 폴더에 이동후
-echo 그 폴더에서 실행 해주세요.
-echo 아무키나 입력하시면 뒤로 가집니다.
+echo 폴더의 경로를 입력하세요!
+echo.
+echo 바탕화면에 태러하려면?
+echo 경로: C:\Users\유저이름\Desktop
+echo 사용자의 이름이 hello 라면,
+echo 경로는 C:\Users\hello\Deskop 입니다.
 
 pause
 goto BT
 :TEST
 cls
-echo LOG:테스트 기능 목록>>C:\BATprogram\BAT.txt 
+echo %DATE% %TIME%:  테스트 기능 목록>>C:\BATprogram\BAT.txt 
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : 뒤로가기
@@ -2540,7 +2907,7 @@ if %a%==0000 goto main
 
 :REBOOT
 cls
-echo LOG:테스트 기능-프로그램 다시시작>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  테스트 기능-프로그램 다시시작>>C:\BATprogram\BAT.txt
 echo 실 행 하 시 겠 습 니  까?
 pause
 bat파일모음5+5.bat
@@ -2549,7 +2916,7 @@ pause
 
 :RE
 cls
-echo LOG:net 복구 기능>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  net 복구 기능>>C:\BATprogram\BAT.txt
 echo 잠시만 기다려 주세요.
 ipconfig/renew
 
@@ -2559,7 +2926,7 @@ goto page2
 
 :shutdown
 cls
-echo LOG:컴퓨터 종료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  컴퓨터 종료>>C:\BATprogram\BAT.txt
 shutdown -s -t 0
 
 echo 굿 바이
