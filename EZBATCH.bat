@@ -1,4 +1,6 @@
 @echo off
+set vision=6.1
+
 
 color b
 if not exist "C:\BATprogram" goto help
@@ -10,7 +12,7 @@ echo.>>C:\BATprogram\BAT.txt
 echo ---------------------%DATE% %TIME%----------------------->>C:\BATprogram\BAT.txt
 echo.>>C:\BATprogram\BAT.txt
 echo %DATE% %TIME%:  ÇÁ·Î±×·¥ ½ÇÇà!>>C:\BATprogram\BAT.txt
-echo %DATE% %TIME%:  ½ÇÇà ¹öÀü:6.0>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ½ÇÇà ¹öÀü:%vision%>>C:\BATprogram\BAT.txt
 mode 1000
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
@@ -25,10 +27,10 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:6.0V PRO 
+echo                                   Program virsion:%vision%V PRO 
 echo.
 echo.
-echo                                         ½ÇÇà ¹öÀü:6.0
+echo                                         ½ÇÇà ¹öÀü:%vision%
 timeout /t 1 > nul
 cls
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
@@ -44,7 +46,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:6.0V PRO 
+echo                                   Program virsion:%vision%V PRO 
 echo.
 echo.
 echo                                  ÇÁ·Î±×·¥ ÆÄÀÏÀ» È®ÀÎÇÕ´Ï´Ù.(BATprogram folder check)
@@ -64,7 +66,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:6.0V PRO 
+echo                                   Program virsion:%vision%V PRO 
 echo.
 echo.
 echo                                  ÇÁ·Î±×·¥ ÆÄÀÏÀ» È®ÀÎÇÕ´Ï´Ù.(mainsetting folder check)
@@ -84,7 +86,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:6.0V PRO 
+echo                                   Program virsion:%vision%V PRO 
 echo.
 echo.
 echo                                  ÇÁ·Î±×·¥ ÆÄÀÏÀ» È®ÀÎÇÕ´Ï´Ù.(main\??)
@@ -142,7 +144,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:5.7V PRO 
+echo                                   Program virsion:%vision%V PRO 
 echo.
 echo.
 echo                                  ¸ÞÀÎ¼¼ÆÃÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.
@@ -164,7 +166,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:5.7V PRO 
+echo                                   Program virsion:%vision%V PRO 
 echo.
 echo.
 echo                                  ¸ÞÀÎ¼¼ÆÃÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.
@@ -185,7 +187,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:5.7V PRO 
+echo                                   Program virsion:%vision%V PRO 
 echo.
 echo.
 echo                                  ¸ÞÀÎ¼¼ÆÃÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.
@@ -242,7 +244,7 @@ goto first
 cls
 echo %DATE% %TIME%:  ¸ÞÀÎ2 ¹Ì¸®º¸±â ÁøÀÔ>>C:\BATprogram\BAT.txt
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
-echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:6.0)            ¦¢
+echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:%vision%)            ¦¢
 echo ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
 echo ¦¢                                  ¦¢
@@ -259,7 +261,7 @@ echo %DATE% %TIME%:  ¸ÞÀÎ2 ÁøÀÔ>>C:\BATprogram\BAT.txt
 
 
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
-echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:6.0)            ¦¢
+echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:%vision%)            ¦¢
 echo ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
 echo ¦¢                                  ¦¢
@@ -268,10 +270,10 @@ echo ¦¢ 4:¾÷µ¥ÀÌÆ® ³»¿ë                  ¦¢
 echo ¦¢ 5:EXIT                           ¦¢
 echo ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥
 set /p an=¿øÇÏ½Ã´Â ¹øÈ£¸¦ ¼±ÅÃÇÏ¼¼¿ä:
-if %an%==1 goto page22
+if %an%==1 goto page2
 if %an%==2 goto setting2
 if %an%==3 goto CMDgo
-if %an%==4 goto report2
+if %an%==4 goto report
 if %an%==5 goto EXIT
 
 :setting
@@ -286,7 +288,7 @@ echo ¦¢ 1:ÅØ½ºÆ®»ö º¯°æ              2:ÇÁ·Î±×·¥ ÃÊ±âÈ­
 echo ¦¢     
 echo ¦¢ 3:¸í·É¾î º¸ÀÌ±â              4:·Î±× °ü¸®
 echo ¦¢                          
-echo ¦¢ 5:¸ÞÀÎº¯°æ                   6:¹®ÀÇ
+echo ¦¢ 5:¸ÞÀÎº¯°æ                   6:°³¹ßÀÚ¿Í Ä«Åå
 echo ¦¢ 
 echo ¦¢ 7:¾÷µ¥ÀÌÆ® È®ÀÎ
 echo ¦¢ 
@@ -324,7 +326,7 @@ echo ¦¢ 1:ÅØ½ºÆ®»ö º¯°æ              2:ÇÁ·Î±×·¥ ÃÊ±âÈ­
 echo ¦¢     
 echo ¦¢ 3:¸í·É¾î º¸ÀÌ±â              4:·Î±× °ü¸®
 echo ¦¢                          
-echo ¦¢ 5:¸ÞÀÎº¯°æ                   6:°³¹ßÀÚ ¾ÆÀÌ½ºÅ©¸² »çÁÖ±â
+echo ¦¢ 5:¸ÞÀÎº¯°æ                   6:°³¹ßÀÚ¿Í 
 echo ¦¢ 
 echo ¦¢ 7:¾÷µ¥ÀÌÆ® È®ÀÎ
 echo ¦¢ 
@@ -385,7 +387,7 @@ goto lode1212
 
 
 :update
-start http://blog.naver.com/victory1577/221041579701
+start http://blog.naver.com/victory1577/221042267669
 goto lode1212
 
 :changemainyn
@@ -460,7 +462,7 @@ mode 100
 echo %DATE% %TIME%:  1¸ÞÀÎ ¹Ì¸®º¸±â ÀÌµ¿>>C:\BATprogram\BAT.txt
 
 echo.
-echo ÇÁ·Î±×·¥ ¹öÀü:6.0¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
+echo ÇÁ·Î±×·¥ ¹öÀü:%vision%¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
 echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
 echo ¦¢ 1 : ÀÎÅÍ³Ý(DNSÄ³½¬ Ã»¼Ò)  
 echo ¦¢-------------------------------------------------------------
@@ -487,7 +489,7 @@ mode 100
 echo %DATE% %TIME%:  ¸ÞÀÎÀÌµ¿>>C:\BATprogram\BAT.txt
 
 echo.
-echo ÇÁ·Î±×·¥ ¹öÀü:6.0¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
+echo ÇÁ·Î±×·¥ ¹öÀü:%vision%¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
 echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
 echo ¦¢ 1 : ÀÎÅÍ³Ý(DNSÄ³½¬ Ã»¼Ò) 
 echo ¦¢-------------------------------------------------------------
@@ -632,7 +634,7 @@ if %a%==13 goto color13
 if %a%==14 goto color14
 if %a%==15 goto color15
 if %a%==16 goto color16
-if %a%==110 goto setting
+if %a%==110 goto lode1212
 if %a%==17 goto color17
 
 :color22
@@ -672,7 +674,7 @@ if %a%==13 goto color13
 if %a%==14 goto color14
 if %a%==15 goto color15
 if %a%==16 goto color16
-if %a%==110 goto setting2
+if %a%==110 goto lode1212
 if %a%==17 goto color17
 
 
@@ -924,47 +926,26 @@ goto LOG2
 cls
 echo %DATE% %TIME%:  ¾÷µ¥ÀÌÆ® ³»¿ëÀ¸·Î ÀÌµ¿>>C:\BATprogram\BAT.txt
 echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
-echo ¦¢ 6.0¹öÀü ¾÷µ¥ÀÌÆ®
+echo ¦¢ %vision%¹öÀü ¾÷µ¥ÀÌÆ®
 echo ¦¢-------------------------------------------------------------
-echo ¦¢ 1.GUI ¼öÁ¤                   
-echo ¦¢ 2.simple¸ÞÀÎÃß°¡
-echo ¦¢ 3.½ÃÀÛÈ­¸é º¯°æ   
-echo ¦¢ 4.¼³Á¤
-echo ¦¢ 5.0000¸í·É ºñÈ°¼ºÈ­         
-echo ¦¢ 6.·Î±×°ü¸® ¹ö±× ¼öÁ¤
-echo ¦¢ 7.¹ö±× ÆÐÄ¡
-echo ¦¢ 8.¿À·ùÄÚµå ¾È³»¹® Ãß°¡
-echo ¦¢ 9.ÇÁ·Î±×·¥ ½ÃÀÛ ÃÖÀûÈ­
+echo ¦¢ 1.±ä±Þ ¹ö±× ÆÐÄ¡                  
+echo ¦¢ 2.
+echo ¦¢ 3.
+echo ¦¢ 4.
+echo ¦¢ 5.       
+echo ¦¢ 6.
+echo ¦¢ 7.
+echo ¦¢ 8.
+echo ¦¢ 9.
 echo ¦¢ 10.
 echo ¦¢ 11.
 echo ¦¢
 echo ¦Æ¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
 
 pause
-goto main
+goto lode1212
 
-:report2
-cls
-echo %DATE% %TIME%:  ¾÷µ¥ÀÌÆ® ³»¿ëÀ¸·Î ÀÌµ¿>>C:\BATprogram\BAT.txt
-echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
-echo ¦¢ 6.0¹öÀü ¾÷µ¥ÀÌÆ®
-echo ¦¢-------------------------------------------------------------
-echo ¦¢ 1.GUI ¼öÁ¤                   
-echo ¦¢ 2.simple¸ÞÀÎÃß°¡
-echo ¦¢ 3.½ÃÀÛÈ­¸é º¯°æ   
-echo ¦¢ 4.¼³Á¤
-echo ¦¢ 5.0000¸í·É ºñÈ°¼ºÈ­         
-echo ¦¢ 6.·Î±×°ü¸® ¹ö±× ¼öÁ¤
-echo ¦¢ 7.¹ö±× ÆÐÄ¡
-echo ¦¢ 8.¿À·ùÄÚµå ¾È³»¹® Ãß°¡
-echo ¦¢ 9.ÇÁ·Î±×·¥ ½ÃÀÛ ÃÖÀûÈ­
-echo ¦¢ 10.
-echo ¦¢ 11.
-echo ¦¢
-echo ¦Æ¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
 
-pause
-goto main2r
 
 :CMDgo
 echo %DATE% %TIME%:  CMD½ÇÇà>>C:\BATprogram\BAT.txt
@@ -1098,7 +1079,7 @@ echo ¦¢ ´ÙÀ½ÆäÀÌÁö:12
 echo ¦Æ¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
 
 set /p a=¿øÇÏ´Â ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.:
-if %a%==1 goto main
+if %a%==1 goto lode1212
 if %a%==2 goto TEST
 if %a%==3 goto Tr
 if %a%==4 goto programs
@@ -1111,47 +1092,6 @@ if %a%==10 goto erro
 if %a%==11 goto batmaker 
 if %a%==12 goto page3
 if %a%==43 goto RE
-
-:page22
-cls 
-echo %DATE% %TIME%:  ÆäÀÌÁö2 ÁøÀÔ>>C:\BATprogram\BAT.txt
-echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-echo ¦¢ ÆäÀÌÁö 2
-echo ¦Æ¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
-echo ¦¢                                                             
-echo ¦¢ 1 : ¸ÞÀÎ ¸Þ´º·Î 
-echo ¦¢ 2 : Å×½ºÆ® ±â´É     
-echo ¦¢ 3 : Å×·¯
-echo ¦¢ 4 : ÇÁ·Î±×·¥ ¸ðÀ½                              
-echo ¦¢ 5 : CMD¸í·É¾îµé
-echo ¦¢ 6 : °³¹ßÀÚ°¡ ½É½ÉÇØ¼­ ¸¸µç°Íµé
-echo ¦¢ 7 : ÄÄ Á¾·á/·Î±×¿ÀÇÁ/ÀýÀü µîµî
-echo ¦¢ 8 : ÀÎÅÍ³Ý »çÀÌÆ® ¸ðÀ½
-echo ¦¢ 9 : ping Å×½ºÆ® (¹æ¹ý)
-echo ¦¢ 10 : ÄÄÇ»ÅÍ ¿¡·¯
-echo ¦¢ 11 : ¹èÄ¡ÆÄÀÏ¸¸µé±â
-echo ¦Æ¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
-echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-echo ¦¢ ´ÙÀ½ÆäÀÌÁö:12
-echo ¦Æ¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-
-set /p a=¿øÇÏ´Â ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.:
-if %a%==1 goto main2r
-if %a%==2 goto TEST
-if %a%==3 goto Tr
-if %a%==4 goto programs
-if %a%==5 goto CMDms
-if %a%==6 goto simsim
-if %a%==7 goto shut
-if %a%==8 goto innet
-if %a%==9 goto ping
-if %a%==10 goto erro
-if %a%==11 goto batmaker 
-if %a%==12 goto page3
-if %a%==43 goto RE
-
-
 
 :page3
 cls 
@@ -3637,8 +3577,7 @@ pause
 
 :help
 echo Ã³À½À¸·Î ¿À¼Ë±º¿ä~?
-pause
-
+pause 
 cd C:\
 md BATprogram
 echo °£´ÜÇÁ·Î±×·¥LOG>C:\BATprogram\BAT.txt
