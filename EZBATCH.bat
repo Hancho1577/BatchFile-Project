@@ -1,5 +1,5 @@
 @echo off
-set vision=6.1
+set vision=6.2
 
 
 color b
@@ -50,7 +50,7 @@ echo                                   Program virsion:%vision%V PRO
 echo.
 echo.
 echo                                  프로그램 파일을 확인합니다.(BATprogram folder check)
-timeout /t 1 > nul
+rem timeout /t 1 > nul
 if not exist "C:\BATprogram" goto erro1
 cls
 echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
@@ -70,7 +70,7 @@ echo                                   Program virsion:%vision%V PRO
 echo.
 echo.
 echo                                  프로그램 파일을 확인합니다.(mainsetting folder check)
-timeout /t 1 > nul
+rem timeout /t 1 > nul
 if not exist "C:\BATprogram\main" goto mainset
 cls
 echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
@@ -90,7 +90,7 @@ echo                                   Program virsion:%vision%V PRO
 echo.
 echo.
 echo                                  프로그램 파일을 확인합니다.(main\??)
-timeout /t 1 > nul
+rem timeout /t 1 > nul
 echo %DATE% %TIME%:  프로그램폴더 확인 성공>>C:\BATprogram\BAT.txt
 goto lode1212
 
@@ -271,7 +271,7 @@ echo │ 5:EXIT                           │
 echo └─────────────────┘
 set /p an=원하시는 번호를 선택하세요:
 if %an%==1 goto page2
-if %an%==2 goto setting2
+if %an%==2 goto setting
 if %an%==3 goto CMDgo
 if %an%==4 goto report
 if %an%==5 goto EXIT
@@ -290,7 +290,7 @@ echo │ 3:명령어 보이기              4:로그 관리
 echo │                          
 echo │ 5:메인변경                   6:개발자와 카톡
 echo │ 
-echo │ 7:업데이트 확인
+echo │ 7:업데이트 확인              8:개발자 유튜브
 echo │ 
 echo │ 
 echo │ 
@@ -308,11 +308,15 @@ if %a%==4 goto LOG1
 if %a%==5 goto changemainyn
 if %a%==6 goto ice
 if %a%==7 goto update
-if %a%==8 goto 
+if %a%==8 goto setting
 if %a%==9 goto 
 if %a%==10 goto 
-if %a%==11 goto main
+if %a%==11 goto lode1212
 if %a%==12 goto 
+
+:deyoutube
+start https://www.youtube.com/channel/UCsjGHzDjt0-tGHZlaCwSAtQ?view_as=subscriber
+goto lode1212
 
 :setting2
 cls 
@@ -326,7 +330,7 @@ echo │ 1:텍스트색 변경              2:프로그램 초기화
 echo │     
 echo │ 3:명령어 보이기              4:로그 관리
 echo │                          
-echo │ 5:메인변경                   6:개발자와 
+echo │ 5:메인변경                   6:개발자와 카톡
 echo │ 
 echo │ 7:업데이트 확인
 echo │ 
@@ -387,7 +391,7 @@ goto lode1212
 
 
 :update
-start http://blog.naver.com/victory1577/221042267669
+start http://hancho1111.tistory.com/88
 goto lode1212
 
 :changemainyn
@@ -530,15 +534,12 @@ if %a%==123 goto setting
 
 :reset
 cls
-echo 3
-pause
-echo 2
-pause
-echo 1
-pause
+echo 프로그램실행중...
 if not exist "C:\batprogramreset" goto resetmake
 cd C:\batprogramreset
-echo %DATE% %TIME%:  프로그램이 초기화됨>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  프로그램이 초기화됨 그런데 이 글을 보고있다는건...?>>C:\BATprogram\BAT.txt
+cd C:\batprogramreset
+cls
 reset.bat
 goto EXIT
 
@@ -554,6 +555,9 @@ echo echo 잠시만기다려주세요>>C:\batprogramreset\reset.bat
 echo timeout /t 3 > nul>>C:\batprogramreset\reset.bat
 echo rd /s /q C:\batprogram>>C:\batprogramreset\reset.bat
 echo echo 완료>>C:\batprogramreset\reset.bat
+echo rd /s /q C:\batprogramreset\reset.bat>>C:\batprogramreset\reset.bat
+
+echo rmdir C:\batprogramreset>>C:\batprogramreset\reset.bat
 echo pause>>C:\batprogramreset\reset.bat
 goto reset
 
@@ -563,7 +567,7 @@ echo %DATE% %TIME%:  메인1설정파일을 만드는중>>C:\BATprogram\BAT.txt
 echo 설정파일을 만드는중.
 cd C:\BATprogram\main
 md main1
-timeout /t 1 > nul
+rem timeout /t 1 > nul
 goto first
 
 
@@ -574,7 +578,7 @@ echo %DATE% %TIME%:  메인2설정파일을 만드는중>>C:\BATprogram\BAT.txt
 echo 설정파일을 만드는중.
 cd C:\BATprogram\main
 md main2
-timeout /t 1 > nul
+rem timeout /t 1 > nul
 goto first
 
 
@@ -584,7 +588,7 @@ echo %DATE% %TIME%:  메인설정파일을 만드는중>>C:\BATprogram\BAT.txt
 echo 메인설정 만드는중
 cd C:\BATprogram
 md main
-timeout /t 1 > nul
+rem timeout /t 1 > nul
 goto mainse
 
 
@@ -594,7 +598,7 @@ echo %DATE% %TIME%:  메인설정파일을 만드는중>>C:\BATprogram\BAT.txt
 echo 메인설정 만드는중
 cd C:\BATprogram
 md main
-timeout /t 1 > nul
+rem timeout /t 1 > nul
 goto mainse2r
 
 :color
@@ -928,12 +932,12 @@ echo %DATE% %TIME%:  업데이트 내용으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │ %vision%버전 업데이트
 echo │-------------------------------------------------------------
-echo │ 1.긴급 버그 패치                  
-echo │ 2.
-echo │ 3.
-echo │ 4.
-echo │ 5.       
-echo │ 6.
+echo │ 1.tree명령어 커스텀 추가                 
+echo │ 2.바탕화면테러기 100%업그레이드
+echo │ 3.바탕화면테러기 복구모드 추가
+echo │ 4.ping테스트 변경
+echo │ 5.프로그램 최적화
+echo │ 6.초기화 기능 간단화
 echo │ 7.
 echo │ 8.
 echo │ 9.
@@ -1070,7 +1074,7 @@ echo │ 5 : CMD명령어들
 echo │ 6 : 개발자가 심심해서 만든것들
 echo │ 7 : 컴 종료/로그오프/절전 등등
 echo │ 8 : 인터넷 사이트 모음
-echo │ 9 : ping 테스트 (방법)
+echo │ 9 : ping 테스트
 echo │ 10 : 컴퓨터 에러
 echo │ 11 : 배치파일만들기
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
@@ -1478,8 +1482,8 @@ echo 완료!
 :ping
 echo %DATE% %TIME%:  ping 테스트 진행or뒤로가기>>C:\BATprogram\BAT.txt
 cls
-echo 다음 화면에서 나오는 
-echo '기본 게이트웨이' 를 외워주세요
+echo 진행하시려면 y를 입력하세요
+echo 뒤로가시려면 n를 입력하세요
 set /p a=계속하기:y 그만하기:n  :
 if %a%==y goto pingtest
 if %a%==n goto page2
@@ -1487,22 +1491,12 @@ if %a%==n goto page2
 :pingtest
 cls
 echo %DATE% %TIME%:  ping테스트 진행>>C:\BATprogram\BAT.txt
-echo 다음 화면에서 나오는 
-echo '기본 게이트웨이' 를 외워주세요.ex)192.116.5.9
+echo ping 테스트를 원하시는 아이피 또는 도메인을 입력해주세요
+echo 예시:192.845.54.8
+set /p ip=아이피:
+echo %DATE% %TIME%:  ping테스트(%ip%) 진행 완료>>C:\BATprogram\BAT.txt
+ping %ip%
 pause
-ipconfig
-echo.
-echo.
-echo.
-echo.
-echo.
-echo '기본 게이트웨이'를 외워주세요ex)192.116.5.9
-pause
-start
-echo 새 cmd 창에서 ping -t 외운 아이피 주소 를 입력해 주세요.
-echo 예시: ping -t 192.845.54.8
-pause
-echo %DATE% %TIME%:  ping테스트 진행 완료>>C:\BATprogram\BAT.txt
 goto page2
 
 
@@ -3041,7 +3035,7 @@ echo │ 1 :
 echo │ 2 : ipconfig
 echo │ 3 : diskpart
 echo │ 4 : msconfig                    
-echo │ 5 : tree(실행 위치)
+echo │ 5 : tree(Custom)
 echo │ 6 : tree(C드라이브 위치)
 echo │ 7 : netstat
 echo │ 8 : 
@@ -3244,8 +3238,10 @@ goto CMDs
 
 :tree
 cls
+set /p treecd=경로를 입력하세요:
+cd %treecd%
 tree
-echo %DATE% %TIME%:  tree 명령어 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  tree 명령어를 %treecd%에서 실행>>C:\BATprogram\BAT.txt
 pause
 goto CMDs
 
@@ -3305,50 +3301,51 @@ if %a%==11 goto ndna
 
 :ndw
 cls
-msdt.exe -id NetworkDiagnosticsWeb
+start msdt.exe -id NetworkDiagnosticsWeb
 goto programs
 
 :ndc
 cls
-msdt.exe -id NetworkDiagnosticsInbound
+start msdt.exe -id NetworkDiagnosticsInbound
 goto programs
 
 :ndna
 cls
-msdt.exe -id NetworkDiagnosticsNetworkAdapter
+start msdt.exe -id NetworkDiagnosticsNetworkAdapter
 goto programs
 
 :harmap
 cls
 cd %windir%\system32
-charmap.exe
+start charmap.exe
 echo %DATE% %TIME%:  문자표 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :mspaint
 cls
 cd %windir%\system32
-mspaint.exe
+start mspaint.exe
 echo %DATE% %TIME%:  그림판 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :wordpad
 cls
 cd %ProgramFiles%\Windows NT\Accessories
-wordpad.exe
+start wordpad.exe
 echo %DATE% %TIME%:  워드패드 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :SnippingTool
 cls
 cd %windir%\system32
-SnippingTool.exe
+start SnippingTool.exe
 echo %DATE% %TIME%:  캡쳐도구 실행>>C:\BATprogram\BAT.txt
 goto programs
 
 :Taskmgr
 cls
 cd C:\WINDOWS\system32
+start Taskmgr.exe
 echo %DATE% %TIME%:  작업관리자 실행>>C:\BATprogram\BAT.txt
 goto programs
 
@@ -3356,7 +3353,7 @@ goto programs
 :notepad
 cls
 cd C:\WINDOWS\system32
-notepad.exe
+start notepad.exe
 echo %DATE% %TIME%:  메모장 실행>>C:\BATprogram\BAT.txt
 goto programs
 
@@ -3369,7 +3366,7 @@ echo │
 echo │ 1.뒤로가기
 echo │ 2.CMD 테러
 echo │ 3.CMD 테러(매우강함)(실행 하지 마시길 바랍니다)
-echo │ 4.폴더 테러기
+echo │ 4.폴더 테러기(절대 실행하지 마세요)
 echo │ 5.인터넷 연결 해제
 echo │         
 echo │
@@ -3469,9 +3466,15 @@ goto Tr
 :BT
 cls
 echo %DATE% %TIME%:  바탕화면 테러를 하시겠습니까?>>C:\BATprogram\BAT.txt
-echo  이 기능은 반자동(?) 입니다.
-pause
-echo 이 기능은 폴더를 생성하여 테러하는 방식 입니다. 사용법은 도움말을 참고하세요.
+echo 이 기능은 폴더를 생성하여 테러하는 방식 입니다. 
+echo 이 기능을 사용하고, 복구가 불가능할 수 있습니다.
+echo 이 기능을 사용하고 복구를 원하신다면 새로열린 복구 창을 절대로 닫지 마세요.
+echo.
+echo 잘 못 하면 윈도우탐색기 실행이 불가능 할 수 있습니다.
+echo.
+echo.
+echo 복구시간이 매우 많이 걸립니다.(저사양일경우에 좀 더)
+echo.
 set /p a=계속 하시려면1번 뒤로 가시려면 2번 도움말을 보시려면3번 을 입력해 주세요. EX)3:
 if %a%==1 goto BTgo
 if %a%==2 goto Tr
@@ -3479,16 +3482,44 @@ if %a%==3 goto BThelp
 
 
 :BTgo
-set /p a=원하시는 경로를 입력하세요:
-if not exist %a% goto BTerro
-if %a%==0000 BT
-if exist %a% goto BTgogo
+echo 불러오는중(복구프로그램 실행및,파일 준비중)
+echo %DATE% %TIME%:   폴더 테러 실행>>C:\BATprogram\BAT.txt
+if not exist C:\BATprogram\BT.bat goto BTmaker
+cd C:\BATprogram
+start BT.bat
+start BT.bat
+goto BTgogo1
+
+:BTmaker
+echo 알 수 없는 이유로 프로그램이 삭제되어있기때문에 다시 생성합니다.
+cd C:\
+cd BATprogram
+echo @echo off>>C:\BATprogram\BT.bat
+echo echo 바탕화면테러를 복구하시려면 아무키나 누루시오>>C:\BATprogram\BT.bat
+echo pause>>C:\BATprogram\BT.bat
+echo cd %%APPDATA%%>>C:\BATprogram\BT.bat
+echo cd..>>C:\BATprogram\BT.bat
+echo cd..>>C:\BATprogram\BT.bat
+echo cd Desktop>>C:\BATprogram\BT.bat
+echo :A>>C:\BATprogram\BT.bat
+echo rmdir %%random%%%%random%%>>C:\BATprogram\BT.bat
+echo goto :A>>C:\BATprogram\BT.bat
+goto BTgo
+
+
+
+:BTgogo1
+cls
+cd %APPDATA%
+cd..
+cd..
+cd Desktop
+goto BTgogo
 
 
 :BTgogo
-echo %DATE% %TIME%:  %a%에 폴더 테러 실행>>C:\BATprogram\BAT.txt
-cd %a%
-md %random%%random%%random%
+
+md %random%%random%
 goto BTgogo
 
 
@@ -3577,15 +3608,43 @@ pause
 
 :help
 echo 처음으로 오셧군요~?
-pause 
+pause
+cls
+echo 초기실행 설정중입니다..
+echo 잠시만 기다려주세요.
+echo (복구용 파일을 준비중입니다..)
 cd C:\
 md BATprogram
 echo 간단프로그램LOG>C:\BATprogram\BAT.txt
 
+cd C:\
+md batprogramreset
+echo @echo off>>C:\batprogramreset\reset.bat
+echo echo 잠시만기다려주세요>>C:\batprogramreset\reset.bat
+echo timeout /t 3 > nul>>C:\batprogramreset\reset.bat
+echo rd /s /q C:\batprogram>>C:\batprogramreset\reset.bat
+echo echo 완료>>C:\batprogramreset\reset.bat
+echo rd /s /q C:\batprogramreset\reset.bat>>C:\batprogramreset\reset.bat
+
+echo rmdir C:\batprogramreset>>C:\batprogramreset\reset.bat
+echo pause>>C:\batprogramreset\reset.bat
 
 
+cd C:\
+cd BATprogram
+echo @echo off>>C:\BATprogram\BT.bat
+echo echo 바탕화면테러를 복구하시려면 아무키나 누루시오>>C:\BATprogram\BT.bat
+echo pause>>C:\BATprogram\BT.bat
+echo cd %%APPDATA%%>>C:\BATprogram\BT.bat
+echo cd..>>C:\BATprogram\BT.bat
+echo cd..>>C:\BATprogram\BT.bat
+echo cd Desktop>>C:\BATprogram\BT.bat
+echo :A>>C:\BATprogram\BT.bat
+echo rmdir %%random%%%%random%%>>C:\BATprogram\BT.bat
+echo goto :A>>C:\BATprogram\BT.bat
 
 
+%pro% = %
 echo.
 echo 환영합니다! 
 
@@ -3623,7 +3682,7 @@ echo 한초
 echo 프로젝트를 제작하신분
 echo.
 echo.
-echo 새별
+echo 새별(아이디어 제공)
 echo.
 echo.
 pause
