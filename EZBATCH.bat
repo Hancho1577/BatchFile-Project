@@ -10,26 +10,459 @@ echo.>>C:\BATprogram\BAT.txt
 echo ---------------------%DATE% %TIME%----------------------->>C:\BATprogram\BAT.txt
 echo.>>C:\BATprogram\BAT.txt
 echo %DATE% %TIME%:  프로그램 실행!>>C:\BATprogram\BAT.txt
-echo %DATE% %TIME%:  실행 버전:5.6>>C:\BATprogram\BAT.txt
-echo 이 프로그램 현재 버전:5.6
-echo 이 프로그램은 새별님,한초님이  만들었습니다.
-echo 무단배포및 수정은 금지입니다.
+echo %DATE% %TIME%:  실행 버전:6.0>>C:\BATprogram\BAT.txt
+mode 1000
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:6.0V PRO 
 echo.
 echo.
-echo 현재 윈도우 프로그램 실행 명령에는 버그가 있습니다.
+echo                                         실행 버전:6.0
+timeout /t 1 > nul
+cls
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:6.0V PRO 
 echo.
-echo 시작하시려면 아무키나 눌러주세요.
+echo.
+echo                                  프로그램 파일을 확인합니다.(BATprogram folder check)
+timeout /t 1 > nul
+if not exist "C:\BATprogram" goto erro1
+cls
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:6.0V PRO 
+echo.
+echo.
+echo                                  프로그램 파일을 확인합니다.(mainsetting folder check)
+timeout /t 1 > nul
+if not exist "C:\BATprogram\main" goto mainset
+cls
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:6.0V PRO 
+echo.
+echo.
+echo                                  프로그램 파일을 확인합니다.(main\??)
+timeout /t 1 > nul
+echo %DATE% %TIME%:  프로그램폴더 확인 성공>>C:\BATprogram\BAT.txt
+goto lode1212
+
+:lode1212
+cls
+echo 불러오는중.
+if not exist "C:\BATprogram\main\main1" goto main2rerro
+if exist "C:\BATprogram\main\main1" goto main
+
+:main2rerro
+cls
+echo 불러오는중2.
+if not exist "C:\BATprogram\main\main2" goto errocode2
+if exist "C:\BATprogram\main\main2" goto main2r
+
+:errocode2
+cls
+echo %DATE% %TIME%:  오류 발생 오류코드:2>>C:\BATprogram\BAT.txt
+echo ┌─────────────────┐
+echo │                                  │
+echo │   메인 설정을 불러올 수 없음     │
+echo │       (백신을 종료해 보세요)     │
+echo │          erro code:2             │
+echo └─────────────────┘
+echo.
+echo.
+echo (자동복구를 실행합니다)
+echo.
 echo.
 pause
-goto main
+timeout /t 10
+rd /s /q C:\batprogram\main
+echo 프로그램 재시작...
+timeout /t 3
+goto first
 
-:main
+
+
+:mainset
 cls
-echo %DATE% %TIME%:  메인이동>>C:\BATprogram\BAT.txt
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:5.7V PRO 
 echo.
-echo 프로그램 버전:5.6ㅣ컴퓨터 종료:100 l 로그:log l 명령어 보이기:Com
+echo.
+echo                                  메인세팅을 찾을 수 없습니다.
+echo.
+echo                                   3초후 설정으로 이동됩니다. 
+timeout /t 1 > nul
+echo %DATE% %TIME%:  메인세팅을 찾을 수 없습니다.>>C:\BATprogram\BAT.txt
+cls
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:5.7V PRO 
+echo.
+echo.
+echo                                  메인세팅을 찾을 수 없습니다.
+echo.
+echo                                   2초후 설정으로 이동됩니다. 
+timeout /t 1 > nul
+cls
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:5.7V PRO 
+echo.
+echo.
+echo                                  메인세팅을 찾을 수 없습니다.
+echo.
+echo                                   1초후 설정으로 이동됩니다. 
+timeout /t 1 > nul
+goto check
+
+:erro1
+cls
+echo %DATE% %TIME%:  오류발생 에러코드:1>>C:\BATprogram\BAT.txt
+echo ┌─────────────────┐
+echo │                                  │
+echo │ 프로그램 파일을 찾을 수 없습니다.│
+echo │  (C드라이브에서 실행해 주세요)   │
+echo │          erro code:1             │
+echo └─────────────────┘
+pause
+goto EXIT
+
+:check
+cls
+echo 불러오는중
+if not exist "C:\BATprogram\main" goto checkgo
+
+:checkgo
+cls
+echo %DATE% %TIME%:  메인설정>>C:\BATprogram\BAT.txt
+echo 일반(원조)메인:1
+echo Simple(새로운)메인:2
+echo.
+echo 일반메인 미리보기:1m
+echo 새로운메인 미리보기:2m
+echo.
+set /p b=원하시는 번호를 입력하세요:
+if %b%==1 goto mainse
+if %b%==2 goto mainse2r
+if %b%==1m goto 1mi
+if %b%==2m goto 2mi
+
+:mainse
+cls
+if not exist "C:\BATprogram\main" goto makemainset
+if not exist "C:\BATprogram\main\main1" goto makemainset1
+goto first
+
+:mainse2r
+cls
+if not exist "C:\BATprogram\main" goto makemainset22
+if not exist "C:\BATprogram\main\main2" goto makemainset2
+goto first
+
+:2mi
+cls
+echo %DATE% %TIME%:  메인2 미리보기 진입>>C:\BATprogram\BAT.txt
+echo ┌─────────────────┐
+echo │메인(프로그램버전:6.0)            │
+echo └─────────────────┘
+echo ┌─────────────────┐
+echo │                                  │
+echo │ 1:시작  2:설정  3:CMD실행        │
+echo │ 4:업데이트 내용                  │
+echo │ 5:EXIT                           │
+echo └─────────────────┘
+pause
+goto checkgo
+
+:main2r
+cls
+echo %DATE% %TIME%:  메인2 진입>>C:\BATprogram\BAT.txt
+
+
+echo ┌─────────────────┐
+echo │메인(프로그램버전:6.0)            │
+echo └─────────────────┘
+echo ┌─────────────────┐
+echo │                                  │
+echo │ 1:시작  2:설정  3:CMD실행        │
+echo │ 4:업데이트 내용                  │
+echo │ 5:EXIT                           │
+echo └─────────────────┘
+set /p an=원하시는 번호를 선택하세요:
+if %an%==1 goto page22
+if %an%==2 goto setting2
+if %an%==3 goto CMDgo
+if %an%==4 goto report2
+if %an%==5 goto EXIT
+
+:setting
+cls 
+echo %DATE% %TIME%:  설정 진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 설정
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
-echo │ 1 : 인터넷(DNS캐쉬 청소) l 텍스트 색 변경:color 
+echo │                                                             
+echo │ 1:텍스트색 변경              2:프로그램 초기화
+echo │     
+echo │ 3:명령어 보이기              4:로그 관리
+echo │                          
+echo │ 5:메인변경                   6:문의
+echo │ 
+echo │ 7:업데이트 확인
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 뒤로가기:11
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto color
+if %a%==2 goto resetyn
+if %a%==3 goto com
+if %a%==4 goto LOG1
+if %a%==5 goto changemainyn
+if %a%==6 goto ice
+if %a%==7 goto update
+if %a%==8 goto 
+if %a%==9 goto 
+if %a%==10 goto 
+if %a%==11 goto main
+if %a%==12 goto 
+
+:setting2
+cls 
+echo %DATE% %TIME%:  설정 진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 설정
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │                                                             
+echo │ 1:텍스트색 변경              2:프로그램 초기화
+echo │     
+echo │ 3:명령어 보이기              4:로그 관리
+echo │                          
+echo │ 5:메인변경                   6:개발자 아이스크림 사주기
+echo │ 
+echo │ 7:업데이트 확인
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 뒤로가기:11
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto color22
+if %a%==2 goto resetyn2
+if %a%==3 goto com2
+if %a%==4 goto LOG2
+if %a%==5 goto changemainyn2
+if %a%==6 goto ice
+if %a%==7 goto update
+if %a%==8 goto 
+if %a%==9 goto 
+if %a%==10 goto 
+if %a%==11 goto main2r
+if %a%==12 goto 
+
+
+:ice
+cls
+echo %DATE% %TIME%:  문의진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │                                                             
+echo │ 1.카카오톡(오픈)
+echo │     
+echo │ 
+echo │                          
+echo │
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 뒤로가기:11
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p se=번호를 입력하세요:
+if %se%==1 goto kakao
+if $se%==11 goto lode1212
+
+:kakao
+start https://open.kakao.com/o/smmH1yx
+goto lode1212
+
+
+:update
+start http://blog.naver.com/victory1577/221041579701
+goto lode1212
+
+:changemainyn
+cls
+echo %DATE% %TIME%:  메인변경 확인 여부>>C:\BATprogram\BAT.txt
+set /p anse=정말로 변경하시겠습니까?Y/N:
+if %anse%==n goto setting
+if %anse%==y goto changemain2
+if %anse%==N goto setting
+if %anse%==Y goto changemain2
+
+:changemainyn2
+cls
+echo %DATE% %TIME%:  메인변경 확인 여부>>C:\BATprogram\BAT.txt
+set /p a=정말로 변경하시겠습니까?Y/N:
+if %a%==n goto setting2
+if %a%==y goto changemain2
+if %a%==N goto setting2
+if %a%==Y goto changemain2
+
+
+
+
+
+:changemain2
+echo %DATE% %TIME%:  메인설정 초기화 실행>>C:\BATprogram\BAT.txt
+cls
+if not exist "C:\batprogramchange" goto changemainmaker2
+cd C:\BATprogramchange
+change
+pause
+goto first
+
+:changemainmaker2
+echo %DATE% %TIME%:  메인변경 배치파일이 만들어짐>>C:\BATprogram\BAT.txt
+cd C:\
+md batprogramchange
+echo @echo off>>C:\batprogramchange\change.bat
+echo echo 잠시만기다려주세요>>C:\batprogramchange\change.bat
+echo timeout /t 3 > nul>>C:\batprogramchange\change.bat
+echo rd /s /q C:\batprogram\main>>C:\batprogramchange\change.bat
+echo echo 완료>>C:\batprogramchange\change.bat
+echo pause>>C:\batprogramchange\change.bat
+echo 메인변경 배치파일 생성중
+timeout /t 3 > NUL
+goto changemain2
+
+:resetyn
+cls
+echo %DATE% %TIME%:  프로그램 초기화 확인 여부>>C:\BATprogram\BAT.txt
+set /p ans=정말로초기화 하시겠습니까? Y/N:
+if %ans%==N goto setting
+if %ans%==Y goto reset
+if %ans%==n goto setting
+if %ans%==y goto reset
+
+:resetyn2
+cls
+echo %DATE% %TIME%:  프로그램 초기화 확인 여부>>C:\BATprogram\BAT.txt
+set /p ans=정말로초기화 하시겠습니까? Y/N:
+if %ans%==N goto setting2
+if %ans%==Y goto reset
+if %ans%==n goto setting2
+if %ans%==y goto reset
+
+
+:1mi
+cls
+mode 100
+
+
+echo %DATE% %TIME%:  1메인 미리보기 이동>>C:\BATprogram\BAT.txt
+
+echo.
+echo 프로그램 버전:6.0ㅣ컴퓨터 종료:100 l 설정:123
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │ 1 : 인터넷(DNS캐쉬 청소)  
 echo │-------------------------------------------------------------
 echo │예약종료:컴퓨터를 지정된 시간후에 자동으로 종료 합니다.             
 echo │ 2 : 예약 종료 취소
@@ -41,7 +474,34 @@ echo │ 7 : 2시간 30분 예약 종료
 echo │ 8 : 3시간 예약종료
 echo │ 9 : 4시간 예약 종료
 echo │-------------------------------------------------------------
-echo │10 : 페이지2 l 곧바로 메인으로:0000(다른페이지에서)
+echo │10 : 페이지2 
+echo │11 : EXIT   l   12 : CMD실행  l  13 : 업데이트 내용
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+pause 
+goto checkgo
+:main
+cls
+mode 100
+
+
+echo %DATE% %TIME%:  메인이동>>C:\BATprogram\BAT.txt
+
+echo.
+echo 프로그램 버전:6.0ㅣ컴퓨터 종료:100 l 설정:123
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │ 1 : 인터넷(DNS캐쉬 청소) 
+echo │-------------------------------------------------------------
+echo │예약종료:컴퓨터를 지정된 시간후에 자동으로 종료 합니다.             
+echo │ 2 : 예약 종료 취소
+echo │ 3 : 30분 예약 종료                                 
+echo │ 4 : 1시간 예약 종료
+echo │ 5 : 1시간 30분 예약 종료            
+echo │ 6 : 2시간 예약종료
+echo │ 7 : 2시간 30분 예약 종료
+echo │ 8 : 3시간 예약종료
+echo │ 9 : 4시간 예약 종료
+echo │-------------------------------------------------------------
+echo │10 : 페이지2 
 echo │11 : EXIT   l   12 : CMD실행  l  13 : 업데이트 내용
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -64,13 +524,82 @@ if %a%==log goto LOG1
 if %a%==com goto Com
 if %a%==Com goto Com
 if %a%==color goto color
+if %a%==123 goto setting
 
+:reset
+cls
+echo 3
+pause
+echo 2
+pause
+echo 1
+pause
+if not exist "C:\batprogramreset" goto resetmake
+cd C:\batprogramreset
+echo %DATE% %TIME%:  프로그램이 초기화됨>>C:\BATprogram\BAT.txt
+reset.bat
+goto EXIT
+
+
+:resetmake
+echo %DATE% %TIME%:  초기화 배치파일 만드는중>>C:\BATprogram\BAT.txt
+echo 초기화배치파일 만드는중.
+echo. 잠시만 기다려 주세요.
+cd C:\
+md batprogramreset
+echo @echo off>>C:\batprogramreset\reset.bat
+echo echo 잠시만기다려주세요>>C:\batprogramreset\reset.bat
+echo timeout /t 3 > nul>>C:\batprogramreset\reset.bat
+echo rd /s /q C:\batprogram>>C:\batprogramreset\reset.bat
+echo echo 완료>>C:\batprogramreset\reset.bat
+echo pause>>C:\batprogramreset\reset.bat
+goto reset
+
+:makemainset1
+cls
+echo %DATE% %TIME%:  메인1설정파일을 만드는중>>C:\BATprogram\BAT.txt
+echo 설정파일을 만드는중.
+cd C:\BATprogram\main
+md main1
+timeout /t 1 > nul
+goto first
+
+
+
+:makemainset2
+cls
+echo %DATE% %TIME%:  메인2설정파일을 만드는중>>C:\BATprogram\BAT.txt
+echo 설정파일을 만드는중.
+cd C:\BATprogram\main
+md main2
+timeout /t 1 > nul
+goto first
+
+
+:makemainset
+cls
+echo %DATE% %TIME%:  메인설정파일을 만드는중>>C:\BATprogram\BAT.txt
+echo 메인설정 만드는중
+cd C:\BATprogram
+md main
+timeout /t 1 > nul
+goto mainse
+
+
+:makemainset22
+cls
+echo %DATE% %TIME%:  메인설정파일을 만드는중>>C:\BATprogram\BAT.txt
+echo 메인설정 만드는중
+cd C:\BATprogram
+md main
+timeout /t 1 > nul
+goto mainse2r
 
 :color
 cls
 echo %DATE% %TIME%:  텍스트 색 변경으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
-echo │ 텍스트색 변경                  뒤로가기:0000
+echo │ 텍스트색 변경                  뒤로가기:110
 echo │-------------------------------------------------------------
 echo │ 1:기본                        l 11:연한 초록색
 echo │ 2:파랑색                      l 12:연한 청록색
@@ -103,8 +632,51 @@ if %a%==13 goto color13
 if %a%==14 goto color14
 if %a%==15 goto color15
 if %a%==16 goto color16
-if %a%==0000 goto main
+if %a%==110 goto setting
 if %a%==17 goto color17
+
+:color22
+cls
+echo %DATE% %TIME%:  텍스트 색 변경으로 이동>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │ 텍스트색 변경                  뒤로가기:110
+echo │-------------------------------------------------------------
+echo │ 1:기본                        l 11:연한 초록색
+echo │ 2:파랑색                      l 12:연한 청록색
+echo │ 3:초록색                      l 13:연한 빨강색
+echo │ 4:청록색                      l 14:연한 자주색
+echo │ 5:빨강색                      l 15:연한 노랑색
+echo │ 6:자주색                      l 16:밝은 흰색
+echo │ 7:노랑색                      l 17:사용자 지정(배경,글자)
+echo │ 8:흰색                        l 18:
+echo │ 9:회색                        l 19:
+echo │ 10:연한 파랑색                l 20:
+echo │                               l
+echo │
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하시는 색상을 선택해 주세요:
+if %a%==1 goto color1
+if %a%==2 goto color2
+if %a%==3 goto color3
+if %a%==4 goto color4
+if %a%==5 goto color5
+if %a%==6 goto color6
+if %a%==7 goto color7
+if %a%==8 goto color8
+if %a%==9 goto color9
+if %a%==10 goto color10
+if %a%==11 goto color11
+if %a%==12 goto color12
+if %a%==13 goto color13
+if %a%==14 goto color14
+if %a%==15 goto color15
+if %a%==16 goto color16
+if %a%==110 goto setting2
+if %a%==17 goto color17
+
+
+
 
 :color1
 cls
@@ -225,7 +797,19 @@ echo 뒤로가기 : 11
 set /p a=원하시는 기능을 선택하세요:
 if %a%==1 goto comon
 if %a%==2 goto comoff
-if %a$==11 goto main
+if %a$==11 goto setting
+
+:Com2
+cls
+echo %DATE% %TIME%:  명령어 보이기/안 보이기>>C:\BATprogram\BAT.txt
+echo 명령어 보이기:1
+echo 명령어 안 보이게:2
+echo 뒤로가기 : 11
+set /p a=원하시는 기능을 선택하세요:
+if %a%==1 goto comon2
+if %a%==2 goto comoff2
+if %a$==11 goto setting2
+
 
 :comoff
 cls
@@ -233,7 +817,15 @@ echo %DATE% %TIME%:  명령어 안 보이기>>C:\BATprogram\BAT.txt
 @echo off
 echo 완료
 pause
-goto main
+goto setting
+
+:comoff2
+cls
+echo %DATE% %TIME%:  명령어 안 보이기>>C:\BATprogram\BAT.txt
+@echo off
+echo 완료
+pause
+goto setting2
 
 :comon
 cls
@@ -241,7 +833,15 @@ echo %DATE% %TIME%:  명령어 보이기>>C:\BATprogram\BAT.txt
 @echo on
 echo 완료
 pause
-goto main
+goto setting2
+
+:comon2
+cls
+echo %DATE% %TIME%:  명령어 보이기>>C:\BATprogram\BAT.txt
+@echo on
+echo 완료
+pause
+goto setting2
 
 :LOG1
 cls 
@@ -252,8 +852,20 @@ echo 뒤로가기 : 11
 set /p a=원하시는 번호를 입력하세요:
 if %a%==1 goto delLOG
 if %a%==2 goto LOGopen
-if %a%==11 goto main
-if %a%==0000 goto main
+if %a%==11 goto setting
+
+
+:LOG2
+cls 
+echo %DATE% %TIME%:  로그 목록>>C:\BATprogram\BAT.txt
+echo 로그파일 초기화 : 1
+echo 로그파일 열기 : 2
+echo 뒤로가기 : 11
+set /p a=원하시는 번호를 입력하세요:
+if %a%==1 goto delLOG2
+if %a%==2 goto LOGopen2
+if %a%==11 goto setting2
+
 
 :LOGopen
 cls
@@ -262,22 +874,47 @@ cd C:\BATprogram
 start BAT.txt
 goto LOG1
 
+:LOGopen
+cls
+echo %DATE% %TIME%:  로그파일 open>>C:\BATprogram\BAT.txt
+cd C:\BATprogram
+start BAT.txt
+goto LOG2
+
 :delLOG
 cls
 color c
 set /p a=로그파일을 초기화 시키겠 습니까? y/n:
-if %a%==y goto delLOG2
+if %a%==y goto delLOG3
 if %a%==n goto LOG1
-if %a%==0000 goto main
+
 color b
 
 :delLOG2
+cls
+color c
+set /p a=로그파일을 초기화 시키겠 습니까? y/n:
+if %a%==y goto delLOG4
+if %a%==n goto LOG2
+
+color b
+
+:delLOG3
 
 cls
 echo %DATE% %TIME%:  로그초기화>C:\BATprogram\BAT.txt
 echo 완료
 pause
 goto LOG1
+
+:delLOG4
+
+cls
+echo %DATE% %TIME%:  로그초기화>C:\BATprogram\BAT.txt
+echo 완료
+pause
+goto LOG2
+
 
 
 
@@ -287,24 +924,47 @@ goto LOG1
 cls
 echo %DATE% %TIME%:  업데이트 내용으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
-echo │ 5.6버전 업데이트
+echo │ 6.0버전 업데이트
 echo │-------------------------------------------------------------
-echo │ 1.tree명령어 추가                     
-echo │ 2.종료목록
-echo │ 3.방송국            
-echo │ 4.버그 수정(뒤로가기 입력시 튕김)
-echo │ 5.곧바로 메인으로(다른 페이지에서 0000을 입력하면 메인으로)           
-echo │ 6.도움말 기능
-echo │ 7.로그 기능
-echo │ 8.색 변경
-echo │ 9.앵무새 추가
-echo │ 10.LOG 구체화
-echo │ 11.폴더테러기 추가
+echo │ 1.GUI 수정                   
+echo │ 2.simple메인추가
+echo │ 3.시작화면 변경   
+echo │ 4.설정
+echo │ 5.0000명령 비활성화         
+echo │ 6.로그관리 버그 수정
+echo │ 7.버그 패치
+echo │ 8.오류코드 안내문 추가
+echo │ 9.프로그램 시작 최적화
+echo │ 10.
+echo │ 11.
 echo │
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 pause
 goto main
+
+:report2
+cls
+echo %DATE% %TIME%:  업데이트 내용으로 이동>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │ 6.0버전 업데이트
+echo │-------------------------------------------------------------
+echo │ 1.GUI 수정                   
+echo │ 2.simple메인추가
+echo │ 3.시작화면 변경   
+echo │ 4.설정
+echo │ 5.0000명령 비활성화         
+echo │ 6.로그관리 버그 수정
+echo │ 7.버그 패치
+echo │ 8.오류코드 안내문 추가
+echo │ 9.프로그램 시작 최적화
+echo │ 10.
+echo │ 11.
+echo │
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+pause
+goto main2r
 
 :CMDgo
 echo %DATE% %TIME%:  CMD실행>>C:\BATprogram\BAT.txt
@@ -451,7 +1111,47 @@ if %a%==10 goto erro
 if %a%==11 goto batmaker 
 if %a%==12 goto page3
 if %a%==43 goto RE
-if %a%==0000 goto main
+
+:page22
+cls 
+echo %DATE% %TIME%:  페이지2 진입>>C:\BATprogram\BAT.txt
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 페이지 2
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo │                                                             
+echo │ 1 : 메인 메뉴로 
+echo │ 2 : 테스트 기능     
+echo │ 3 : 테러
+echo │ 4 : 프로그램 모음                              
+echo │ 5 : CMD명령어들
+echo │ 6 : 개발자가 심심해서 만든것들
+echo │ 7 : 컴 종료/로그오프/절전 등등
+echo │ 8 : 인터넷 사이트 모음
+echo │ 9 : ping 테스트 (방법)
+echo │ 10 : 컴퓨터 에러
+echo │ 11 : 배치파일만들기
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
+echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo │ 다음페이지:12
+echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+set /p a=원하는 번호를 입력하세요.:
+if %a%==1 goto main2r
+if %a%==2 goto TEST
+if %a%==3 goto Tr
+if %a%==4 goto programs
+if %a%==5 goto CMDms
+if %a%==6 goto simsim
+if %a%==7 goto shut
+if %a%==8 goto innet
+if %a%==9 goto ping
+if %a%==10 goto erro
+if %a%==11 goto batmaker 
+if %a%==12 goto page3
+if %a%==43 goto RE
+
+
 
 :page3
 cls 
@@ -488,7 +1188,7 @@ if %a%==10 goto
 if %a%==11 goto 
 if %a%==12 goto 
 if %a%==43 goto RE
-if %a%==0000 goto main
+
 
 :plus
 cls
@@ -711,7 +1411,7 @@ if %a%==9 goto ping
 if %a%==10 goto minecraft
 if %a%==11 goto startbat 
 if %a%==43 goto RE
-if %a%==0000 goto main
+
 
 :command
 cls
@@ -801,7 +1501,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto page2 
 if %a%==43 goto RE
-if %a%==0000 goto main
+
 
 :netknow
 cls
@@ -899,7 +1599,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto page2
 if %a%==22 goto innet2
-if %a%==0000 goto main
+
 
 :innet2
 echo %DATE% %TIME%:  사이트 목록 2번째 페이지 진입>>C:\BATprogram\BAT.txt
@@ -933,7 +1633,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto innet
 if %a%==22 goto innet3
-if %a%==0000 goto main
+
 
 :bcs
 cls
@@ -967,7 +1667,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto innet2
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :koreabcs
 cls
@@ -1001,7 +1701,7 @@ if %a%==9 goto TVz
 if %a%==10 goto dgnews
 if %a%==11 goto bcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :dgnews
 cls
@@ -1090,7 +1790,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto bcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :hk
 cls
@@ -1124,7 +1824,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto hbcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :TTV
 echo %DATE% %TIME%:  TTV 사이트 접속>>C:\BATprogram\BAT.txt
@@ -1188,7 +1888,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto hbcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :hz
 cls
@@ -1240,7 +1940,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto hbcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :CCTV
 cls
@@ -1303,7 +2003,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto hbcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :ABC
 cls
@@ -1361,7 +2061,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto hbcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :CBC
 cls
@@ -1414,7 +2114,7 @@ if %a%==9 goto
 if %a%==10 goto 
 if %a%==11 goto hbcs
 if %a%==22 goto 
-if %a%==0000 goto main
+
 
 :ABCTV
 cls
@@ -1534,7 +2234,7 @@ if %a%==8 goto
 if %a%==9 goto 
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :shutdowntime
 cls
@@ -1567,7 +2267,7 @@ if %a%==8 goto 4hs
 if %a%==9 goto shutdown
 if %a%==10 goto user
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :user
 cls
@@ -1684,7 +2384,7 @@ if %a%==8 goto 4hl
 if %a%==9 goto rightnowl
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :30l
 cls
@@ -1789,7 +2489,7 @@ if %a%==8 goto 4hlg
 if %a%==9 goto rightnowg
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :30lg
 cls
@@ -1896,7 +2596,7 @@ if %a%==8 goto 4hr
 if %a%==9 goto rightnowr
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :30r
 cls
@@ -2002,7 +2702,7 @@ if %a%==8 goto 4hh
 if %a%==9 goto rightnowh
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :30h
 cls
@@ -2110,7 +2810,7 @@ if %a%==8 goto 4hli
 if %a%==9 goto rightnowi
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :30li
 cls
@@ -2209,7 +2909,7 @@ if %a%==8 goto
 if %a%==9 goto 
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :parrot
 cls
@@ -2222,7 +2922,7 @@ goto parrot2
 
 echo.
 set /p a=원하는 말:
-if %a%==0000 goto main
+
 echo.
 echo [앵무새]%a%
 echo %DATE% %TIME%:  앵무새에게 "%a%" 라고 말하셧 습니다.>>C:\BATprogram\BAT.txt
@@ -2251,7 +2951,7 @@ echo 페이지 2 에서 43을 입력하세요.
 set /p a==y실행 n거절.:
 if %a%==y goto netgo
 if %a%==n goto TEST
-if %a%==0000 goto main
+
 
 
 :netgo
@@ -2286,7 +2986,7 @@ echo y/n
 set /p a=y/n:
 if %a%==n goto simsim
 if %a%==y goto CMDdo2
-if %a%==0000 goto main
+
 
 :CMDdo2
 echo %DATE% %TIME%:  CMD도배 시작>>C:\BATprogram\BAT.txt
@@ -2386,7 +3086,7 @@ if %a%==8 goto
 if %a%==9 goto 
 if %a%==10 goto 
 if %a%==11 goto page2
-if %a%==0000 goto main
+
 
 :CMDn
 cls
@@ -2425,7 +3125,7 @@ if %a%==8 goto
 if %a%==9 goto 
 if %a%==10 goto 
 if %a%==11 goto CMDs
-if %a%==0000 goto main
+
 
 :CMDnetwork
 cls
@@ -2466,7 +3166,7 @@ if %a%==9 goto netshinttcpsetglobalautotuningleveldisabled
 if %a%==10 goto netshinttcpsetglobalrssenabled
 if %a%==11 goto CMDs
 if %a%==12 goto CMDnetwork2
-if %a%==0000 goto main
+
 
 
 :ipconfig
@@ -2570,7 +3270,7 @@ if %a%==8 goto
 if %a%==9 goto 
 if %a%==10 goto 
 if %a%==11 goto CMDnetwork
-if %a%==0000 goto main
+
 
 :netshinttcpshowglobal
 cls
@@ -2661,7 +3361,7 @@ if %a%==8 goto harmap
 if %a%==9 goto ndw
 if %a%==10 goto ndc
 if %a%==11 goto ndna
-if %a%==0000 goto main
+
 
 :ndw
 cls
@@ -2752,7 +3452,7 @@ if %a%==8 goto
 if %a%==9 goto 
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :back
 cls
@@ -2836,7 +3536,7 @@ set /p a=계속 하시려면1번 뒤로 가시려면 2번 도움말을 보시려면3번 을 입력해 주세�
 if %a%==1 goto BTgo
 if %a%==2 goto Tr
 if %a%==3 goto BThelp
-if %a%==0000 goto main
+
 
 :BTgo
 set /p a=원하시는 경로를 입력하세요:
@@ -2903,7 +3603,7 @@ if %a%==8 goto
 if %a%==9 goto 
 if %a%==10 goto 
 if %a%==11 goto 
-if %a%==0000 goto main
+
 
 :REBOOT
 cls
@@ -2944,6 +3644,9 @@ md BATprogram
 echo 간단프로그램LOG>C:\BATprogram\BAT.txt
 
 
+
+
+
 echo.
 echo 환영합니다! 
 
@@ -2964,38 +3667,24 @@ echo.
 echo.
 pause
 
-set /p a=%b%님! 도움말을 보려시면y를 프로그램을 시작하시려면 n을 입력해 주세요!:
-if %a%==y goto helplist
+set /p a=%b%님! 제작자를 보려시면y를 프로그램을 시작하시려면 n을 입력해 주세요!:
+if %a%==y goto maker
 if %a%==n goto first
 
 pause
 cls
 goto first
 
-:helplist
-cls
-echo 1.기능 설명(준비중)
-echo 2.TIP(준비중)
-echo 3.제작자들
-echo 4.프로그램 실행
-
-set /p a==원하시는 번호를 입력하세요:
-if %a%==1 goto function
-if %a%==2 goto TIP
-if %a%==3 goto maker
-if %a%==4 goto main
 
 
 :maker
 cls
 echo ▼제작자▼
 echo 한초
-echo 프로젝트를 시작하신분
+echo 프로젝트를 제작하신분
 echo.
 echo.
 echo 새별
-echo 정말 똑똑하시고 컴퓨터를 잘하시는분
-echo (한초님에게 도움을 많이주신분)
 echo.
 echo.
 pause
@@ -3014,4 +3703,4 @@ echo.
 
 
 pause 
-goto helplist
+goto first
