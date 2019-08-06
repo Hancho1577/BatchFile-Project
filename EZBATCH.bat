@@ -1,5 +1,5 @@
 @echo off
-set vision=6.2
+set version=6.3
 
 
 color b
@@ -11,8 +11,8 @@ title °£´ÜÇÑ ÇÁ·Î±×·¥
 echo.>>C:\BATprogram\BAT.txt
 echo ---------------------%DATE% %TIME%----------------------->>C:\BATprogram\BAT.txt
 echo.>>C:\BATprogram\BAT.txt
-echo %DATE% %TIME%:  ÇÁ·Î±×·¥ ½ÇÇà!>>C:\BATprogram\BAT.txt
-echo %DATE% %TIME%:  ½ÇÇà ¹öÀü:%vision%>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ÇÁ·Î±×·¥ ½ÇÇà>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ½ÇÇà ¹öÀü:%version%>>C:\BATprogram\BAT.txt
 mode 1000
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
@@ -27,10 +27,10 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:%vision%V PRO 
+echo                                   Program virsion:%version%V PRO 
 echo.
 echo.
-echo                                         ½ÇÇà ¹öÀü:%vision%
+echo                                         ½ÇÇà ¹öÀü:%version%
 timeout /t 1 > nul
 cls
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
@@ -46,7 +46,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:%vision%V PRO 
+echo                                   Program virsion:%version%V PRO 
 echo.
 echo.
 echo                                  ÇÁ·Î±×·¥ ÆÄÀÏÀ» È®ÀÎÇÕ´Ï´Ù.(BATprogram folder check)
@@ -66,7 +66,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:%vision%V PRO 
+echo                                   Program virsion:%version%V PRO 
 echo.
 echo.
 echo                                  ÇÁ·Î±×·¥ ÆÄÀÏÀ» È®ÀÎÇÕ´Ï´Ù.(mainsetting folder check)
@@ -86,10 +86,10 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:%vision%V PRO 
+echo                                   Program virsion:%version%V PRO 
 echo.
 echo.
-echo                                  ÇÁ·Î±×·¥ ÆÄÀÏÀ» È®ÀÎÇÕ´Ï´Ù.(main\??)
+echo                                  ÇÁ·Î±×·¥ ÆÄÀÏÀ» È®ÀÎÇÕ´Ï´Ù.(main\)
 rem timeout /t 1 > nul
 echo %DATE% %TIME%:  ÇÁ·Î±×·¥Æú´õ È®ÀÎ ¼º°ø>>C:\BATprogram\BAT.txt
 goto lode1212
@@ -144,7 +144,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:%vision%V PRO 
+echo                                   Program virsion:%version%V PRO 
 echo.
 echo.
 echo                                  ¸ÞÀÎ¼¼ÆÃÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.
@@ -166,7 +166,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:%vision%V PRO 
+echo                                   Program virsion:%version%V PRO 
 echo.
 echo.
 echo                                  ¸ÞÀÎ¼¼ÆÃÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.
@@ -187,7 +187,7 @@ echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡á¡à¡à¡à¡á¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡à¡á¡à¡á¡à¡à¡á¡à¡
 echo ¡à¡à¡à¡á¡à¡à¡à¡á¡à¡à¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡à¡à¡á¡á¡á¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
 echo ¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à¡à
-echo                                   Program virsion:%vision%V PRO 
+echo                                   Program virsion:%version%V PRO 
 echo.
 echo.
 echo                                  ¸ÞÀÎ¼¼ÆÃÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.
@@ -244,7 +244,7 @@ goto first
 cls
 echo %DATE% %TIME%:  ¸ÞÀÎ2 ¹Ì¸®º¸±â ÁøÀÔ>>C:\BATprogram\BAT.txt
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
-echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:%vision%)            ¦¢
+echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:%version%)            ¦¢
 echo ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
 echo ¦¢                                  ¦¢
@@ -261,7 +261,7 @@ echo %DATE% %TIME%:  ¸ÞÀÎ2 ÁøÀÔ>>C:\BATprogram\BAT.txt
 
 
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
-echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:%vision%)            ¦¢
+echo ¦¢¸ÞÀÎ(ÇÁ·Î±×·¥¹öÀü:%version%)            ¦¢
 echo ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥
 echo ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤
 echo ¦¢                                  ¦¢
@@ -430,7 +430,7 @@ echo %DATE% %TIME%:  ¸ÞÀÎº¯°æ ¹èÄ¡ÆÄÀÏÀÌ ¸¸µé¾îÁü>>C:\BATprogram\BAT.txt
 cd C:\
 md batprogramchange
 echo @echo off>>C:\batprogramchange\change.bat
-echo echo Àá½Ã¸¸±â´Ù·ÁÁÖ¼¼¿ä>>C:\batprogramchange\change.bat
+echo echo Àá½Ã¸¸±â´Ù·ÁÁÖ¼¼¿ä.>>C:\batprogramchange\change.bat
 echo timeout /t 3 > nul>>C:\batprogramchange\change.bat
 echo rd /s /q C:\batprogram\main>>C:\batprogramchange\change.bat
 echo echo ¿Ï·á>>C:\batprogramchange\change.bat
@@ -466,7 +466,7 @@ mode 100
 echo %DATE% %TIME%:  1¸ÞÀÎ ¹Ì¸®º¸±â ÀÌµ¿>>C:\BATprogram\BAT.txt
 
 echo.
-echo ÇÁ·Î±×·¥ ¹öÀü:%vision%¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
+echo ÇÁ·Î±×·¥ ¹öÀü:%version%¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
 echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
 echo ¦¢ 1 : ÀÎÅÍ³Ý(DNSÄ³½¬ Ã»¼Ò)  
 echo ¦¢-------------------------------------------------------------
@@ -493,7 +493,7 @@ mode 100
 echo %DATE% %TIME%:  ¸ÞÀÎÀÌµ¿>>C:\BATprogram\BAT.txt
 
 echo.
-echo ÇÁ·Î±×·¥ ¹öÀü:%vision%¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
+echo ÇÁ·Î±×·¥ ¹öÀü:%version%¤ÓÄÄÇ»ÅÍ Á¾·á:100 l ¼³Á¤:123
 echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
 echo ¦¢ 1 : ÀÎÅÍ³Ý(DNSÄ³½¬ Ã»¼Ò) 
 echo ¦¢-------------------------------------------------------------
@@ -537,7 +537,7 @@ cls
 echo ÇÁ·Î±×·¥½ÇÇàÁß...
 if not exist "C:\batprogramreset" goto resetmake
 cd C:\batprogramreset
-echo %DATE% %TIME%:  ÇÁ·Î±×·¥ÀÌ ÃÊ±âÈ­µÊ ±×·±µ¥ ÀÌ ±ÛÀ» º¸°íÀÖ´Ù´Â°Ç...?>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ÇÁ·Î±×·¥ÀÌ ÃÊ±âÈ­µÇ¾ú½À´Ï´Ù>>C:\BATprogram\BAT.txt
 cd C:\batprogramreset
 cls
 reset.bat
@@ -551,7 +551,7 @@ echo. Àá½Ã¸¸ ±â´Ù·Á ÁÖ¼¼¿ä.
 cd C:\
 md batprogramreset
 echo @echo off>>C:\batprogramreset\reset.bat
-echo echo Àá½Ã¸¸±â´Ù·ÁÁÖ¼¼¿ä>>C:\batprogramreset\reset.bat
+echo echo Àá½Ã¸¸ ±â´Ù·ÁÁÖ¼¼¿ä>>C:\batprogramreset\reset.bat
 echo timeout /t 3 > nul>>C:\batprogramreset\reset.bat
 echo rd /s /q C:\batprogram>>C:\batprogramreset\reset.bat
 echo echo ¿Ï·á>>C:\batprogramreset\reset.bat
@@ -930,7 +930,7 @@ goto LOG2
 cls
 echo %DATE% %TIME%:  ¾÷µ¥ÀÌÆ® ³»¿ëÀ¸·Î ÀÌµ¿>>C:\BATprogram\BAT.txt
 echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬        
-echo ¦¢ %vision%¹öÀü ¾÷µ¥ÀÌÆ®
+echo ¦¢ %version%¹öÀü ¾÷µ¥ÀÌÆ®
 echo ¦¢-------------------------------------------------------------
 echo ¦¢ 1.tree¸í·É¾î Ä¿½ºÅÒ Ãß°¡                 
 echo ¦¢ 2.¹ÙÅÁÈ­¸éÅ×·¯±â 100%¾÷±×·¹ÀÌµå
@@ -980,7 +980,7 @@ ipconfig/displaydns
 ipconfig/flushdns
 echo.
 echo.
-echo Ã»¼Ò¿Ï·á.¾Æ¹«Å°³ª ´©·ç½Ã¿À ...
+echo Ã»¼Ò¿Ï·á.¾Æ¹«Å°³ª ´©¸£½Ã¿À ...
 pause
 goto main
 
@@ -1330,7 +1330,7 @@ echo ¦È¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
 echo ¦¢
 echo ¦¢ 1 : µÚ·Î°¡±â
 echo ¦¢ 2 : ¸»³ª¿À°Ô ÇÏ±â(echo)    
-echo ¦¢ 3 : °è¼ÓÇÏ·Á¸é ¾Æ¹«Å°³ª ´©·ç½Ã¿À(pause)
+echo ¦¢ 3 : °è¼ÓÇÏ·Á¸é ¾Æ¹«Å°³ª ´©¸£½Ã¿À(pause)
 echo ¦¢ 4 : ´ÙÀ½ÁÙ·Î(echo.)                              
 echo ¦¢ 5 : ¸í·É
 echo ¦¢ 6 : 
@@ -1394,7 +1394,7 @@ set /p c=¿øÇÏ´Â ¸»À» ÀûÀ¸¼¼¿ä:
 echo echo %c%>>C:\BATprogram\batmaker\BATmaker.bat
 echo ¿Ï·á !
 
-echo %DATE% %TIME%:  ¹èÄ¡ÆÄÀÏ¿¡ %c% ¶ó´Â ¸Þ¼¼Áö¸¦ ¸¸µë>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ¹èÄ¡ÆÄÀÏ¿¡ %c% ¶ó´Â ¸Þ¼¼Áö¸¦ ¸¸µê>>C:\BATprogram\BAT.txt
 
 echo °á°ú¹°
 cd C:\BATprogram\batmaker
@@ -2946,22 +2946,16 @@ color 5a
 
 echo ¹®»ó Å©·¢±â 86.886V
 pause
-echo ll
-pause
-echo ¼­¹ö Á¢¼Ó.¿Ï·á!
-pause
-echo º¸¾È ÀýÂ÷ ÀÔ´Ï´Ù ½ºÆäÀÌ½º¹Ù¸¦ µü 3¹ø¸¸ ´­·¯ÁÖ¼¼¿ä ! (²À)
-pause
-pause
+echo conecting to ccc1.kro.kr:2916
+timeout /t 1 > nul
+echo connection established
+timeout /t 2 > nul
+echo waiting for response...
+timeout /t 2 > nul
 pause
 
 :random
 echo ??? %ramdom%
-
-
-
-pause
-echo ´Ù½Ã
 pause
 color 0a
 mode 1000
@@ -3495,7 +3489,7 @@ echo ¾Ë ¼ö ¾ø´Â ÀÌÀ¯·Î ÇÁ·Î±×·¥ÀÌ »èÁ¦µÇ¾îÀÖ±â¶§¹®¿¡ ´Ù½Ã »ý¼ºÇÕ´Ï´Ù.
 cd C:\
 cd BATprogram
 echo @echo off>>C:\BATprogram\BT.bat
-echo echo ¹ÙÅÁÈ­¸éÅ×·¯¸¦ º¹±¸ÇÏ½Ã·Á¸é ¾Æ¹«Å°³ª ´©·ç½Ã¿À>>C:\BATprogram\BT.bat
+echo echo ¹ÙÅÁÈ­¸éÅ×·¯¸¦ º¹±¸ÇÏ½Ã·Á¸é ¾Æ¹«Å°³ª ´©¸£½Ã¿À>>C:\BATprogram\BT.bat
 echo pause>>C:\BATprogram\BT.bat
 echo cd %%APPDATA%%>>C:\BATprogram\BT.bat
 echo cd..>>C:\BATprogram\BT.bat
@@ -3536,7 +3530,7 @@ echo %DATE% %TIME%:  ¹ÙÅÁÈ­¸é Å×·¯ µµ¿ò¸» ½ÇÇà>>C:\BATprogram\BAT.txt
 echo ¿øÇÏ½Ã´Â Æú´õ¿¡ Å×·¯ÇÏ½Ã·Á¸é?
 echo Æú´õÀÇ °æ·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä!
 echo.
-echo ¹ÙÅÁÈ­¸é¿¡ ÅÂ·¯ÇÏ·Á¸é?
+echo ¹ÙÅÁÈ­¸é¿¡ Å×·¯ÇÏ·Á¸é?
 echo °æ·Î: C:\Users\À¯ÀúÀÌ¸§\Desktop
 echo »ç¿ëÀÚÀÇ ÀÌ¸§ÀÌ hello ¶ó¸é,
 echo °æ·Î´Â C:\Users\hello\Deskop ÀÔ´Ï´Ù.
@@ -3579,7 +3573,7 @@ if %a%==11 goto
 :REBOOT
 cls
 echo %DATE% %TIME%:  Å×½ºÆ® ±â´É-ÇÁ·Î±×·¥ ´Ù½Ã½ÃÀÛ>>C:\BATprogram\BAT.txt
-echo ½Ç Çà ÇÏ ½Ã °Ú ½À ´Ï  ±î?
+echo ½ÇÇà ÇÏ½Ã°Ú½À´Ï±î?
 pause
 batÆÄÀÏ¸ðÀ½5+5.bat
 
@@ -3588,7 +3582,7 @@ pause
 :RE
 cls
 echo %DATE% %TIME%:  net º¹±¸ ±â´É>>C:\BATprogram\BAT.txt
-echo Àá½Ã¸¸ ±â´Ù·Á ÁÖ¼¼¿ä.
+echo Àá½Ã¸¸ ±â´Ù·ÁÁÖ¼¼¿ä.
 ipconfig/renew
 
 
@@ -3600,14 +3594,14 @@ cls
 echo %DATE% %TIME%:  ÄÄÇ»ÅÍ Á¾·á>>C:\BATprogram\BAT.txt
 shutdown -s -t 0
 
-echo ±Â ¹ÙÀÌ
+echo shutting down
 pause
 
 
 
 
 :help
-echo Ã³À½À¸·Î ¿À¼Ë±º¿ä~?
+echo È¯¿µÇÕ´Ï´Ù. 
 pause
 cls
 echo ÃÊ±â½ÇÇà ¼³Á¤ÁßÀÔ´Ï´Ù..
@@ -3620,7 +3614,7 @@ echo °£´ÜÇÁ·Î±×·¥LOG>C:\BATprogram\BAT.txt
 cd C:\
 md batprogramreset
 echo @echo off>>C:\batprogramreset\reset.bat
-echo echo Àá½Ã¸¸±â´Ù·ÁÁÖ¼¼¿ä>>C:\batprogramreset\reset.bat
+echo echo Àá½Ã¸¸ ±â´Ù·ÁÁÖ¼¼¿ä>>C:\batprogramreset\reset.bat
 echo timeout /t 3 > nul>>C:\batprogramreset\reset.bat
 echo rd /s /q C:\batprogram>>C:\batprogramreset\reset.bat
 echo echo ¿Ï·á>>C:\batprogramreset\reset.bat
@@ -3633,7 +3627,7 @@ echo pause>>C:\batprogramreset\reset.bat
 cd C:\
 cd BATprogram
 echo @echo off>>C:\BATprogram\BT.bat
-echo echo ¹ÙÅÁÈ­¸éÅ×·¯¸¦ º¹±¸ÇÏ½Ã·Á¸é ¾Æ¹«Å°³ª ´©·ç½Ã¿À>>C:\BATprogram\BT.bat
+echo echo ¹ÙÅÁÈ­¸éÅ×·¯¸¦ º¹±¸ÇÏ½Ã·Á¸é ¾Æ¹«Å°³ª ´©¸£½Ã¿À>>C:\BATprogram\BT.bat
 echo pause>>C:\BATprogram\BT.bat
 echo cd %%APPDATA%%>>C:\BATprogram\BT.bat
 echo cd..>>C:\BATprogram\BT.bat
@@ -3645,22 +3639,10 @@ echo goto :A>>C:\BATprogram\BT.bat
 
 
 %pro% = %
-echo.
-echo È¯¿µÇÕ´Ï´Ù! 
-
-pause
-echo.
-echo ÀÌ È­¸éÀº Ã³À½ ½ÇÇà½Ã¿¡¸¸ ³ªÅ¸³³´Ï´Ù.
-
-pause
-cls
 set /p b=´ç½ÅÀÇ ÀÌ¸§Àº?:
-echo ¿À!%b%´Ô! Á¤¸» ¸ÚÁø ÀÌ¸§ÀÌ³×¿ä!
-pause 
 echo.
 echo.
-echo ¸¸³ª¼­ ¹Ý°¡¿ö¿ä %b%´Ô!
-
+echo È¯¿µÇÕ´Ï´Ù %b%´Ô
 echo.
 echo.
 pause
@@ -3688,10 +3670,6 @@ echo.
 pause
 echo.
 echo.
-echo ±×¸®°í ´ç½Å
-echo ¹Ù·Î "%b%"´Ô
-echo.
-pause
 echo.
 echo.
 echo %b%´Ôµµ ¹ö±×Á¦º¸,Ãß°¡±â´É µîÀ» Á¦º¸ÇÏ¿©
