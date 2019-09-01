@@ -1,13 +1,10 @@
 @echo off
-set version=6.3
-
-
+set version=6.4
+C:
 color b
 if not exist "C:\BATprogram" goto help
 :first
-SET DT=%DATE%
-SET TE=%TIME%
-title 간단한 프로그램
+title HC BATCH
 echo.>>C:\BATprogram\BAT.txt
 echo ---------------------%DATE% %TIME%----------------------->>C:\BATprogram\BAT.txt
 echo.>>C:\BATprogram\BAT.txt
@@ -32,6 +29,52 @@ echo.
 echo.
 echo                                         실행 버전:%version%
 timeout /t 1 > nul
+cls
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+echo                                   Program virsion:%version%V PRO 
+echo.
+echo.
+echo                                  		초기화
+C:
+echo 1번째 작업 완료됨
+cd BATprogram
+echo 2번째 작업 완료됨
+echo 3번째 작업 건너뜀
+echo @echo off>C:\BATprogram\BT.bat
+echo 4번째 작업 완료됨
+echo echo 바탕화면테러를 복구하려면 아무키나 누르시오>>C:\BATprogram\BT.bat
+echo 5번째 작업 완료됨
+echo pause>>C:\BATprogram\BT.bat
+echo 6번째 작업 완료됨
+echo cd %%APPDATA%%>>C:\BATprogram\BT.bat
+echo 7번째 작업 완료됨
+echo cd..>>C:\BATprogram\BT.bat
+echo 8번째 작업 완료됨
+echo cd..>>C:\BATprogram\BT.bat
+echo 9번째 작업 완료됨
+echo cd Desktop>>C:\BATprogram\BT.bat
+echo 10번째 작업 완료됨
+echo :A>>C:\BATprogram\BT.bat
+echo 11번째 작업 완료됨
+echo rmdir HC115511%%random%%>>C:\BATprogram\BT.bat
+echo 12번째 작업 완료됨
+echo goto :A>>C:\BATprogram\BT.bat
+echo 13번째 작업 완료됨
+C:
+echo 14번째 작업 완료됨
+rem 의미없는 알림(?)
 cls
 echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
@@ -117,8 +160,8 @@ echo │          erro code:2             │
 echo └─────────────────┘
 echo.
 echo.
-echo (자동복구를 실행합니다)
-echo.
+echo 백신의 실시간검사가 실행에 영향을 줄 수 있습니다.
+echo 재시도 대기중.
 echo.
 pause
 timeout /t 10
@@ -216,7 +259,7 @@ if not exist "C:\BATprogram\main" goto checkgo
 :checkgo
 cls
 echo %DATE% %TIME%:  메인설정>>C:\BATprogram\BAT.txt
-echo 일반(원조)메인:1
+echo 일반(기존)메인:1
 echo Simple(새로운)메인:2
 echo.
 echo 일반메인 미리보기:1m
@@ -249,7 +292,7 @@ echo └─────────────────┘
 echo ┌─────────────────┐
 echo │                                  │
 echo │ 1:시작  2:설정  3:CMD실행        │
-echo │ 4:업데이트 내용                  │
+echo │ 			                   │
 echo │ 5:EXIT                           │
 echo └─────────────────┘
 pause
@@ -266,7 +309,7 @@ echo └─────────────────┘
 echo ┌─────────────────┐
 echo │                                  │
 echo │ 1:시작  2:설정  3:CMD실행        │
-echo │ 4:업데이트 내용                  │
+echo │			                   │
 echo │ 5:EXIT                           │
 echo └─────────────────┘
 set /p an=원하시는 번호를 선택하세요:
@@ -361,7 +404,7 @@ if %a%==12 goto
 cls
 echo %DATE% %TIME%:  문의진입>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-echo │ 
+echo │ 문의하기
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │                                                             
@@ -391,13 +434,13 @@ goto lode1212
 
 
 :update
-start http://hancho1111.tistory.com/88
+start https://github.com/Hancho1577/BatchFile-Project/releases
 goto lode1212
 
 :changemainyn
 cls
 echo %DATE% %TIME%:  메인변경 확인 여부>>C:\BATprogram\BAT.txt
-set /p anse=정말로 변경하시겠습니까?Y/N:
+set /p anse=정말 변경하시겠습니까?Y/N:
 if %anse%==n goto setting
 if %anse%==y goto changemain2
 if %anse%==N goto setting
@@ -406,7 +449,7 @@ if %anse%==Y goto changemain2
 :changemainyn2
 cls
 echo %DATE% %TIME%:  메인변경 확인 여부>>C:\BATprogram\BAT.txt
-set /p a=정말로 변경하시겠습니까?Y/N:
+set /p a=정말 변경하시겠습니까?Y/N:
 if %a%==n goto setting2
 if %a%==y goto changemain2
 if %a%==N goto setting2
@@ -442,7 +485,7 @@ goto changemain2
 :resetyn
 cls
 echo %DATE% %TIME%:  프로그램 초기화 확인 여부>>C:\BATprogram\BAT.txt
-set /p ans=정말로초기화 하시겠습니까? Y/N:
+set /p ans=정말 초기화 하시겠습니까? Y/N:
 if %ans%==N goto setting
 if %ans%==Y goto reset
 if %ans%==n goto setting
@@ -451,7 +494,7 @@ if %ans%==y goto reset
 :resetyn2
 cls
 echo %DATE% %TIME%:  프로그램 초기화 확인 여부>>C:\BATprogram\BAT.txt
-set /p ans=정말로초기화 하시겠습니까? Y/N:
+set /p ans=정말 초기화 하시겠습니까? Y/N:
 if %ans%==N goto setting2
 if %ans%==Y goto reset
 if %ans%==n goto setting2
@@ -481,7 +524,7 @@ echo │ 8 : 3시간 예약종료
 echo │ 9 : 4시간 예약 종료
 echo │-------------------------------------------------------------
 echo │10 : 페이지2 
-echo │11 : EXIT   l   12 : CMD실행  l  13 : 업데이트 내용
+echo │11 : EXIT   l   12 : CMD실행
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 pause 
 goto checkgo
@@ -508,7 +551,7 @@ echo │ 8 : 3시간 예약종료
 echo │ 9 : 4시간 예약 종료
 echo │-------------------------------------------------------------
 echo │10 : 페이지2 
-echo │11 : EXIT   l   12 : CMD실행  l  13 : 업데이트 내용
+echo │11 : EXIT   l   12 : CMD실행 
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 set /p a=원하는 번호 또는 문자 를 입력하세요.:
@@ -3359,8 +3402,8 @@ echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo │
 echo │ 1.뒤로가기
 echo │ 2.CMD 테러
-echo │ 3.CMD 테러(매우강함)(실행 하지 마시길 바랍니다)
-echo │ 4.폴더 테러기(절대 실행하지 마세요)
+echo │ 3.CMD 테러(매우강함)(권장 안 함)
+echo │ 4.폴더 테러기(절대 권장 안 함)
 echo │ 5.인터넷 연결 해제
 echo │         
 echo │
@@ -3448,7 +3491,9 @@ start
 start
 start
 
-
+:CMD3
+START %0
+goto CMD3
 :CMD2
 echo %DATE% %TIME%:  CMD테러 (매우강함)>>C:\BATprogram\BAT.txt
 START %0
@@ -3462,12 +3507,12 @@ cls
 echo %DATE% %TIME%:  바탕화면 테러를 하시겠습니까?>>C:\BATprogram\BAT.txt
 echo 이 기능은 폴더를 생성하여 테러하는 방식 입니다. 
 echo 이 기능을 사용하고, 복구가 불가능할 수 있습니다.
-echo 이 기능을 사용하고 복구를 원하신다면 새로열린 복구 창을 절대로 닫지 마세요.
+echo 이 기능을 사용하고 복구를 원하신다면 새로열린 복구 창을 절대 닫지 마세요.
 echo.
-echo 잘 못 하면 윈도우탐색기 실행이 불가능 할 수 있습니다.
+echo 윈도우탐색기의(explorer) 실행이 불가능해질 수 있습니다.
 echo.
 echo.
-echo 복구시간이 매우 많이 걸립니다.(저사양일경우에 좀 더)
+echo 복구시간이 매우 오래 걸립니다.
 echo.
 set /p a=계속 하시려면1번 뒤로 가시려면 2번 도움말을 보시려면3번 을 입력해 주세요. EX)3:
 if %a%==1 goto BTgo
@@ -3486,17 +3531,17 @@ goto BTgogo1
 
 :BTmaker
 echo 알 수 없는 이유로 프로그램이 삭제되어있기때문에 다시 생성합니다.
-cd C:\
+C:
 cd BATprogram
-echo @echo off>>C:\BATprogram\BT.bat
-echo echo 바탕화면테러를 복구하시려면 아무키나 누르시오>>C:\BATprogram\BT.bat
+echo @echo off>C:\BATprogram\BT.bat
+echo echo 바탕화면테러를 복구하려면 아무키나 누르시오>>C:\BATprogram\BT.bat
 echo pause>>C:\BATprogram\BT.bat
 echo cd %%APPDATA%%>>C:\BATprogram\BT.bat
 echo cd..>>C:\BATprogram\BT.bat
 echo cd..>>C:\BATprogram\BT.bat
 echo cd Desktop>>C:\BATprogram\BT.bat
 echo :A>>C:\BATprogram\BT.bat
-echo rmdir %%random%%%%random%%>>C:\BATprogram\BT.bat
+echo rmdir HC115511%%random%%>>C:\BATprogram\BT.bat
 echo goto :A>>C:\BATprogram\BT.bat
 goto BTgo
 
@@ -3507,13 +3552,15 @@ cls
 cd %APPDATA%
 cd..
 cd..
+start Desktop
 cd Desktop
+
 goto BTgogo
 
 
 :BTgogo
-
-md %random%%random%
+echo 중단을 원하는경우 이 창을 닫으세요
+md HC115511%random%
 goto BTgogo
 
 
@@ -3607,11 +3654,11 @@ cls
 echo 초기실행 설정중입니다..
 echo 잠시만 기다려주세요.
 echo (복구용 파일을 준비중입니다..)
-cd C:\
+C:
 md BATprogram
 echo 간단프로그램LOG>C:\BATprogram\BAT.txt
 
-cd C:\
+C:
 md batprogramreset
 echo @echo off>>C:\batprogramreset\reset.bat
 echo echo 잠시만 기다려주세요>>C:\batprogramreset\reset.bat
@@ -3624,17 +3671,17 @@ echo rmdir C:\batprogramreset>>C:\batprogramreset\reset.bat
 echo pause>>C:\batprogramreset\reset.bat
 
 
-cd C:\
+C:
 cd BATprogram
-echo @echo off>>C:\BATprogram\BT.bat
-echo echo 바탕화면테러를 복구하시려면 아무키나 누르시오>>C:\BATprogram\BT.bat
+echo @echo off>C:\BATprogram\BT.bat
+echo echo 바탕화면테러를 복구하려면 아무키나 누르시오>>C:\BATprogram\BT.bat
 echo pause>>C:\BATprogram\BT.bat
 echo cd %%APPDATA%%>>C:\BATprogram\BT.bat
 echo cd..>>C:\BATprogram\BT.bat
 echo cd..>>C:\BATprogram\BT.bat
 echo cd Desktop>>C:\BATprogram\BT.bat
 echo :A>>C:\BATprogram\BT.bat
-echo rmdir %%random%%%%random%%>>C:\BATprogram\BT.bat
+echo rmdir HC115511%%random%%>>C:\BATprogram\BT.bat
 echo goto :A>>C:\BATprogram\BT.bat
 
 
