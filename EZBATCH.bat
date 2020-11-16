@@ -1,49 +1,44 @@
 @echo off
 set version=6.6
+set logo0=□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+set logo1=□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+set logo2=■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+set logo3=■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+set logo4=□■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
+set logo5=□■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
+set logo6=□■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+set logo7=□□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
+set logo8=□□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
+set logo9=□□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
+set logo10=□□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
+set logo11=□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+set logo12=□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+set logo13=                                  Program version:%version%
+
 C:
 color b
 if not exist "C:\BATprogram" goto help
+
 :first
 title HC BATCH
 echo.>>C:\BATprogram\BAT.txt
 echo ---------------------%DATE% %TIME%----------------------->>C:\BATprogram\BAT.txt
 echo.>>C:\BATprogram\BAT.txt
-echo %DATE% %TIME%:  프로그램 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  프로그램을 실행 함>>C:\BATprogram\BAT.txt
 echo %DATE% %TIME%:  실행 버전:%version%>>C:\BATprogram\BAT.txt
 mode 1000
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                         실행 버전:%version%
 timeout /t 1 > nul
+
 cls
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                  		초기화
@@ -73,63 +68,31 @@ echo 12번째 작업 완료됨
 echo goto :A>>C:\BATprogram\BT.bat
 echo 13번째 작업 완료됨
 C:
-echo 14번째 작업 완료됨
-rem 의미없는 알림(?)
 cls
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                  프로그램 파일을 확인합니다.(BATprogram folder check)
 rem timeout /t 1 > nul
 if not exist "C:\BATprogram" goto erro1
 cls
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                  프로그램 파일을 확인합니다.(mainsetting folder check)
 rem timeout /t 1 > nul
 if not exist "C:\BATprogram\main" goto mainset
 cls
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                  프로그램 파일을 확인합니다.(main\)
@@ -160,7 +123,7 @@ echo │          erro code:2             │
 echo └─────────────────┘
 echo.
 echo.
-echo 백신의 실시간검사가 실행에 영향을 줄 수 있습니다.
+echo 백신의 실시간검사가 배치파일 실행에 영향을 줄 수 있습니다.
 echo 재시도 대기중.
 echo.
 pause
@@ -174,20 +137,9 @@ goto first
 
 :mainset
 cls
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                  메인세팅을 찾을 수 없습니다.
@@ -196,20 +148,9 @@ echo                                   3초후 설정으로 이동됩니다.
 timeout /t 1 > nul
 echo %DATE% %TIME%:  메인세팅을 찾을 수 없습니다.>>C:\BATprogram\BAT.txt
 cls
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                  메인세팅을 찾을 수 없습니다.
@@ -217,20 +158,9 @@ echo.
 echo                                   2초후 설정으로 이동됩니다. 
 timeout /t 1 > nul
 cls
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo ■□□□□□□□□□■□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □■□□□■□□□■□□□■■■□□■□□■■■□□□■■■□□□■■□■■□□□■■■□□
-echo □■□□□■□□□■□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□■□■□■□■□□□■■■■■□■□■□□□□□■□□□■□■□□■□□■□■■■■■□
-echo □□■□■□■□■□□□■□□□□□■□■□□□□□■□□□■□■□□■□□■□■□□□□□
-echo □□□■□□□■□□□□■□□□■□■□■□□□■□■□□□■□■□□■□□■□■□□□■□
-echo □□□■□□□■□□□□□■■■□□■□□■■■□□□■■■□□■□□■□□■□□■■■□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-echo                                   Program virsion:%version%V PRO 
+echo %logo0% & echo %logo1% & echo %logo2% & echo %logo3% & echo %logo4% &echo %logo5%
+echo %logo6% & echo %logo7% &echo %logo8% &echo %logo9% & echo %logo10% & echo %logo11%
+echo %logo12% & echo %logo13%
 echo.
 echo.
 echo                                  메인세팅을 찾을 수 없습니다.
@@ -439,7 +369,7 @@ goto lode1212
 
 :changemainyn
 cls
-echo %DATE% %TIME%:  메인변경 확인 여부>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  메인변경 수락 여부 확인 중>>C:\BATprogram\BAT.txt
 set /p anse=정말 변경하시겠습니까?Y/N:
 if %anse%==n goto setting
 if %anse%==y goto changemain2
@@ -448,7 +378,7 @@ if %anse%==Y goto changemain2
 
 :changemainyn2
 cls
-echo %DATE% %TIME%:  메인변경 확인 여부>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  메인변경 수락 여부 확인 중>>C:\BATprogram\BAT.txt
 set /p a=정말 변경하시겠습니까?Y/N:
 if %a%==n goto setting2
 if %a%==y goto changemain2
@@ -460,7 +390,7 @@ if %a%==Y goto changemain2
 
 
 :changemain2
-echo %DATE% %TIME%:  메인설정 초기화 실행>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  메인설정 초기화 실행 중>>C:\BATprogram\BAT.txt
 cls
 if not exist "C:\batprogramchange" goto changemainmaker2
 cd C:\BATprogramchange
@@ -469,22 +399,22 @@ pause
 goto first
 
 :changemainmaker2
-echo %DATE% %TIME%:  메인변경 배치파일이 만들어짐>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  메인변경 배치파일을 만듦>>C:\BATprogram\BAT.txt
 cd C:\
 md batprogramchange
 echo @echo off>>C:\batprogramchange\change.bat
-echo echo 잠시만기다려주세요.>>C:\batprogramchange\change.bat
+echo echo 잠시만 기다려주세요.>>C:\batprogramchange\change.bat
 echo timeout /t 3 > nul>>C:\batprogramchange\change.bat
 echo rd /s /q C:\batprogram\main>>C:\batprogramchange\change.bat
 echo echo 완료>>C:\batprogramchange\change.bat
 echo pause>>C:\batprogramchange\change.bat
-echo 메인변경 배치파일 생성중
+echo 메인변경 배치파일 생성 중
 timeout /t 3 > NUL
 goto changemain2
 
 :resetyn
 cls
-echo %DATE% %TIME%:  프로그램 초기화 확인 여부>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  프로그램 초기화 여부 확인 중>>C:\BATprogram\BAT.txt
 set /p ans=정말 초기화 하시겠습니까? Y/N:
 if %ans%==N goto setting
 if %ans%==Y goto reset
@@ -493,7 +423,7 @@ if %ans%==y goto reset
 
 :resetyn2
 cls
-echo %DATE% %TIME%:  프로그램 초기화 확인 여부>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  프로그램 초기화 여부 확인 중>>C:\BATprogram\BAT.txt
 set /p ans=정말 초기화 하시겠습니까? Y/N:
 if %ans%==N goto setting2
 if %ans%==Y goto reset
@@ -506,7 +436,7 @@ cls
 mode 100
 
 
-echo %DATE% %TIME%:  1메인 미리보기 이동>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  메인 1 미리보기 이동>>C:\BATprogram\BAT.txt
 
 echo.
 echo 프로그램 버전:%version%ㅣ컴퓨터 종료:100 l 설정:123
@@ -577,7 +507,7 @@ if %a%==123 goto setting
 
 :reset
 cls
-echo 프로그램실행중...
+echo 프로그램 실행 중...
 if not exist "C:\batprogramreset" goto resetmake
 cd C:\batprogramreset
 echo %DATE% %TIME%:  프로그램이 초기화되었습니다>>C:\BATprogram\BAT.txt
@@ -588,9 +518,9 @@ goto EXIT
 
 
 :resetmake
-echo %DATE% %TIME%:  초기화 배치파일 만드는중>>C:\BATprogram\BAT.txt
-echo 초기화배치파일 만드는중.
-echo. 잠시만 기다려 주세요.
+echo %DATE% %TIME%:  초기화 배치파일 만드는 중>>C:\BATprogram\BAT.txt
+echo 초기화 배치파일 만드는 중 . . .
+echo. 잠시만 기다려주세요.
 cd C:\
 md batprogramreset
 echo @echo off>>C:\batprogramreset\reset.bat
@@ -606,8 +536,8 @@ goto reset
 
 :makemainset1
 cls
-echo %DATE% %TIME%:  메인1설정파일을 만드는중>>C:\BATprogram\BAT.txt
-echo 설정파일을 만드는중.
+echo %DATE% %TIME%:  메인1 설정파일을 만드는 중>>C:\BATprogram\BAT.txt
+echo 설정파일을 만드는 중 . . .
 cd C:\BATprogram\main
 md main1
 rem timeout /t 1 > nul
@@ -617,8 +547,8 @@ goto first
 
 :makemainset2
 cls
-echo %DATE% %TIME%:  메인2설정파일을 만드는중>>C:\BATprogram\BAT.txt
-echo 설정파일을 만드는중.
+echo %DATE% %TIME%:  메인2 설정파일을 만드는 중>>C:\BATprogram\BAT.txt
+echo 설정파일을 만드는 중 . . .
 cd C:\BATprogram\main
 md main2
 rem timeout /t 1 > nul
@@ -627,8 +557,8 @@ goto first
 
 :makemainset
 cls
-echo %DATE% %TIME%:  메인설정파일을 만드는중>>C:\BATprogram\BAT.txt
-echo 메인설정 만드는중
+echo %DATE% %TIME%:  메인설정파일을 만드는 중>>C:\BATprogram\BAT.txt
+echo 메인설정 만드는 중 . . .
 cd C:\BATprogram
 md main
 rem timeout /t 1 > nul
@@ -637,8 +567,8 @@ goto mainse
 
 :makemainset22
 cls
-echo %DATE% %TIME%:  메인설정파일을 만드는중>>C:\BATprogram\BAT.txt
-echo 메인설정 만드는중
+echo %DATE% %TIME%:  메인설정파일을 만드는 중>>C:\BATprogram\BAT.txt
+echo 메인설정 만드는중 . . .
 cd C:\BATprogram
 md main
 rem timeout /t 1 > nul
@@ -646,7 +576,7 @@ goto mainse2r
 
 :color
 cls
-echo %DATE% %TIME%:  텍스트 색 변경으로 이동>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트 색 설정으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │ 텍스트색 변경                  뒤로가기:110
 echo │-------------------------------------------------------------
@@ -664,7 +594,7 @@ echo │                               l
 echo │
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-set /p a=원하시는 색상을 선택해 주세요:
+set /p a=원하시는 색상을 선택해주세요:
 if %a%==1 goto color1
 if %a%==2 goto color2
 if %a%==3 goto color3
@@ -686,7 +616,7 @@ if %a%==17 goto color17
 
 :color22
 cls
-echo %DATE% %TIME%:  텍스트 색 변경으로 이동>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트 색 설정으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │ 텍스트색 변경                  뒤로가기:110
 echo │-------------------------------------------------------------
@@ -704,7 +634,7 @@ echo │                               l
 echo │
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-set /p a=원하시는 색상을 선택해 주세요:
+set /p a=원하시는 색상을 선택해주세요:
 if %a%==1 goto color1
 if %a%==2 goto color2
 if %a%==3 goto color3
@@ -730,19 +660,19 @@ if %a%==17 goto color17
 :color1
 cls
 color b
-echo %DATE% %TIME%:  텍스트색을 기본 으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 기본으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color2
 cls
 color 1
-echo %DATE% %TIME%:  텍스트색을 파랑색 으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 파랑색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color3
 cls
 color 2
-echo %DATE% %TIME%:  텍스트색을 초록색 으로 변경>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  텍스트색을 초록색으로 변경>>C:\BATprogram\BAT.txt
 goto color
 
 :color4
@@ -839,9 +769,9 @@ goto color
 
 :Com
 cls
-echo %DATE% %TIME%:  명령어 보이기/안 보이기>>C:\BATprogram\BAT.txt
-echo 명령어 보이기:1
-echo 명령어 안 보이게:2
+echo %DATE% %TIME%:  명령어 출력 여부>>C:\BATprogram\BAT.txt
+echo 명령어 출력:1
+echo 명령어 출력 안 함:2
 echo 뒤로가기 : 11
 set /p a=원하시는 기능을 선택하세요:
 if %a%==1 goto comon
@@ -850,9 +780,9 @@ if %a$==11 goto setting
 
 :Com2
 cls
-echo %DATE% %TIME%:  명령어 보이기/안 보이기>>C:\BATprogram\BAT.txt
-echo 명령어 보이기:1
-echo 명령어 안 보이게:2
+echo %DATE% %TIME%:  명령어 출력 여부>>C:\BATprogram\BAT.txt
+echo 명령어 출력:1
+echo 명령어 출력 안 함:2
 echo 뒤로가기 : 11
 set /p a=원하시는 기능을 선택하세요:
 if %a%==1 goto comon2
@@ -862,41 +792,41 @@ if %a$==11 goto setting2
 
 :comoff
 cls
-echo %DATE% %TIME%:  명령어 안 보이기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  명령어 출력 안 함으로 설정>>C:\BATprogram\BAT.txt
 @echo off
-echo 완료
+echo 설정되었습니다.
 pause
 goto setting
 
 :comoff2
 cls
-echo %DATE% %TIME%:  명령어 안 보이기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  명령어 출력 안 함으로 설정>>C:\BATprogram\BAT.txt
 @echo off
-echo 완료
+echo 설정되었습니다.
 pause
 goto setting2
 
 :comon
 cls
-echo %DATE% %TIME%:  명령어 보이기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  명령어 출력으로 설정>>C:\BATprogram\BAT.txt
 @echo on
-echo 완료
+echo 설정되었습니다.
 pause
 goto setting2
 
 :comon2
 cls
-echo %DATE% %TIME%:  명령어 보이기>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  명령어 출력으로 설정>>C:\BATprogram\BAT.txt
 @echo on
-echo 완료
+echo 설정되었습니다.
 pause
 goto setting2
 
 :LOG1
 cls 
 echo %DATE% %TIME%:  로그 목록>>C:\BATprogram\BAT.txt
-echo 로그파일 초기화 : 1
-echo 로그파일 열기 : 2
+echo 로그 초기화 : 1
+echo 로그 확인 : 2
 echo 뒤로가기 : 11
 set /p a=원하시는 번호를 입력하세요:
 if %a%==1 goto delLOG
@@ -907,8 +837,8 @@ if %a%==11 goto setting
 :LOG2
 cls 
 echo %DATE% %TIME%:  로그 목록>>C:\BATprogram\BAT.txt
-echo 로그파일 초기화 : 1
-echo 로그파일 열기 : 2
+echo 로그 초기화 : 1
+echo 로그 열기 : 2
 echo 뒤로가기 : 11
 set /p a=원하시는 번호를 입력하세요:
 if %a%==1 goto delLOG2
@@ -933,7 +863,7 @@ goto LOG2
 :delLOG
 cls
 color c
-set /p a=로그파일을 초기화 시키겠 습니까? y/n:
+set /p a=로그를 초기화 할까요? y/n:
 if %a%==y goto delLOG3
 if %a%==n goto LOG1
 
@@ -942,7 +872,7 @@ color b
 :delLOG2
 cls
 color c
-set /p a=로그파일을 초기화 시키겠 습니까? y/n:
+set /p a=로그를 초기화 할까요? y/n:
 if %a%==y goto delLOG4
 if %a%==n goto LOG2
 
@@ -952,7 +882,7 @@ color b
 
 cls
 echo %DATE% %TIME%:  로그초기화>C:\BATprogram\BAT.txt
-echo 완료
+echo 로그가 초기화 되었습니다.
 pause
 goto LOG1
 
@@ -960,7 +890,7 @@ goto LOG1
 
 cls
 echo %DATE% %TIME%:  로그초기화>C:\BATprogram\BAT.txt
-echo 완료
+echo 로그가 초기화 되었습니다.
 pause
 goto LOG2
 
@@ -975,17 +905,17 @@ echo %DATE% %TIME%:  업데이트 내용으로 이동>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │ %version%버전 업데이트
 echo │-------------------------------------------------------------
-echo │ 1.tree명령어 커스텀 추가                 
-echo │ 2.바탕화면테러기 100%업그레이드
-echo │ 3.바탕화면테러기 복구모드 추가
-echo │ 4.ping테스트 변경
-echo │ 5.프로그램 최적화
-echo │ 6.초기화 기능 간단화
-echo │ 7.
-echo │ 8.
-echo │ 9.
-echo │ 10.
-echo │ 11.
+echo │ https://github.com/jungwuk-ryu/BatchFile-Project/releases               
+echo │ 위 링크를 참고해주세요.
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo │ 
+echo │ 
 echo │
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -1000,10 +930,10 @@ start
 goto main
 
 :DNSr
-echo %DATE% %TIME%:  인터넷 최적화 (DNS캐쉬 초기화)를 할것인가? 안할것 인가?>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  인터넷 최적화 (DNS캐쉬 초기화) 실행 여부>>C:\BATprogram\BAT.txt
 cls
 echo DNS캐시파일을 청소하여 인터넷 속도를 향상시킵니다.
-echo 계속하시려면 y,취소하시려면n 를 입력해 주세요.
+echo 계속하려면 y, 취소하려면 n을 입력해주세요.
 set /p a=원하는 명령을 입력하세요.:
 if %a%==n goto main
 if %a%==y goto DNS
@@ -1012,18 +942,17 @@ if %a%==y goto DNS
 
 cls
 echo.
-echo 이프로그램은 DNS캐시 청소 명령어 활용 cmd입니다 
-echo 불이익이 발생할시 제작자와는 상관이 없습니다. 
-echo 동의하실꺼면 아무키나누루세요...
+echo DNS캐시 청소 명령어를 실행합니다.
+echo 아무키나 누르세요.
 pause
-echo %DATE% %TIME%:  DNS캐쉬 청소를 진행하셧습니다.>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  DNS캐쉬 청소 실행>>C:\BATprogram\BAT.txt
 color 0c
 cls
 ipconfig/displaydns
 ipconfig/flushdns
 echo.
 echo.
-echo 청소완료.아무키나 누르시오 ...
+echo DNS캐시가 청소되었습니다.
 pause
 goto main
 
@@ -1114,8 +1043,8 @@ echo │ 2 : 테스트 기능
 echo │ 3 : 테러
 echo │ 4 : 프로그램 모음                              
 echo │ 5 : CMD명령어들
-echo │ 6 : 개발자가 심심해서 만든것들
-echo │ 7 : 컴 종료/로그오프/절전 등등
+echo │ 6 : 잡다한 기능
+echo │ 7 : 컴 종료/로그오프/절전
 echo │ 8 : 인터넷 사이트 모음
 echo │ 9 : ping 테스트
 echo │ 10 : 컴퓨터 에러
@@ -1361,7 +1290,7 @@ goto batmaker
 
 :batmaker2
 cls
-echo 기존 배치파일을 확인했습니다.
+echo 배치파일을 찾았습니다.
 echo.
 pause
 goto batmaker3
@@ -1372,9 +1301,9 @@ echo %DATE% %TIME%:  배치파일 만들기 진입>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : 뒤로가기
-echo │ 2 : 말나오게 하기(echo)    
+echo │ 2 : 메세지 출력(echo)    
 echo │ 3 : 계속하려면 아무키나 누르시오(pause)
-echo │ 4 : 다음줄로(echo.)                              
+echo │ 4 : 줄 바꿈(echo.)                              
 echo │ 5 : 명령
 echo │ 6 : 
 echo │ 7 : 
@@ -1406,7 +1335,7 @@ set /p comm=원하는 명령을 적으세요:
 echo echo %comm%>>C:\BATprogram\batmaker\BATmaker.bat
 
 cls
-echo 결과물을 확인하세요!
+echo 결과물을 확인하세요.
 cd C:\BATprogram\batmaker
 call BATmaker.bat
 echo %DATE% %TIME%:  배치파일에 명령어%comm%을(를) 작성 >>C:\BATprogram\BAT.txt
@@ -1433,7 +1362,7 @@ goto batmaker3
 
 :echo
 cls
-set /p c=원하는 말을 적으세요:
+set /p c=원하는 메세지를 작성하세요.:
 echo echo %c%>>C:\BATprogram\batmaker\BATmaker.bat
 echo 완료 !
 
@@ -1512,7 +1441,7 @@ netsh int tcp show global
 
 pause
 cls
-echo 완료 되었습니다.
+echo 완료되었습니다.
 pause
 goto erro
 
@@ -1535,9 +1464,9 @@ if %a%==n goto page2
 cls
 echo %DATE% %TIME%:  ping테스트 진행>>C:\BATprogram\BAT.txt
 echo ping 테스트를 원하시는 아이피 또는 도메인을 입력해주세요
-echo 예시:192.845.54.8
+echo ex) 192.168.1.1
 set /p ip=아이피:
-echo %DATE% %TIME%:  ping테스트(%ip%) 진행 완료>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  ping테스트(%ip%) 진행>>C:\BATprogram\BAT.txt
 ping %ip%
 pause
 goto page2
@@ -2195,7 +2124,7 @@ echo │ 7 : 원격종료
 echo │
 echo │
 echo │
-echo │ 이 기능들은 테스트진행이 되지 않았습니다.
+echo │ 
 echo │
 echo ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -2226,7 +2155,7 @@ echo │ 5 : 2시간
 echo │ 6 : 2시간30분	
 echo │ 7 : 3시간
 echo │ 8 : 4시간
-echo │ 9 : 당장
+echo │ 9 : 즉시
 echo │ 10 : 사용자 지정
 echo │
 echo │
@@ -2342,7 +2271,7 @@ echo │ 5 : 2시간
 echo │ 6 : 2시간30분	
 echo │ 7 : 3시간
 echo │ 8 : 4시간
-echo │ 9 : 당장
+echo │ 9 : 즉시
 echo │
 echo │
 echo │
@@ -2366,7 +2295,7 @@ if %a%==11 goto
 :30l
 cls
 shutdown -l -t 1800
-echo 30분후  예약 완료
+echo 30분후 예약 완료
 echo %DATE% %TIME%:  로그오프 30 분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2375,7 +2304,7 @@ goto shut
 :1hl
 cls
 shutdown -l -t 3600
-echo 1시간후  예약 완료
+echo 1시간후 예약 완료
 echo %DATE% %TIME%:  로그오프 1시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2384,7 +2313,7 @@ goto shut
 :1h3sl
 cls
 shutdown -l -t 5400
-echo 1시간30분후  예약 완료
+echo 1시간30분후 예약 완료
 echo %DATE% %TIME%:  로그오프 1시간 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2393,7 +2322,7 @@ goto shut
 :2hl
 cls
 shutdown -l -t 7200
-echo 2시간후  예약 완료
+echo 2시간후 예약 완료
 echo %DATE% %TIME%:  로그오프 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2402,7 +2331,7 @@ goto shut
 :2h3sl
 cls
 shutdown -l -t 9000
-echo 2시간30분후  예약 완료
+echo 2시간30분후 예약 완료
 echo %DATE% %TIME%:  로그오프 2시간 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2412,7 +2341,7 @@ goto shut
 :3hl
 cls
 shutdown -l -t 10800
-echo 3시간후  예약 완료
+echo 3시간후 예약 완료
 echo %DATE% %TIME%:  로그오프 3시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2447,7 +2376,7 @@ echo │ 5 : 2시간
 echo │ 6 : 2시간30분	
 echo │ 7 : 3시간
 echo │ 8 : 4시간
-echo │ 9 : 당장
+echo │ 9 : 즉시
 echo │
 echo │
 echo │
@@ -2471,7 +2400,7 @@ if %a%==11 goto
 :30lg
 cls
 shutdown -g -t 1800
-echo 30분후  예약 완료
+echo 30분후 예약 완료
 echo %DATE% %TIME%:  재부팅(g)30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2480,7 +2409,7 @@ goto shut
 :1hlg
 cls
 shutdown -g -t 3600
-echo 1시간후  예약 완료
+echo 1시간후 예약 완료
 echo %DATE% %TIME%:  재부팅(g) 1시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2489,7 +2418,7 @@ goto shut
 :1h3slg
 cls
 shutdown -g -t 5400
-echo 1시간30분후  예약 완료
+echo 1시간30분후 예약 완료
 echo %DATE% %TIME%:  재부팅(g) 1시간 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2498,7 +2427,7 @@ goto shut
 :2hlg
 cls
 shutdown -g -t 7200
-echo 2시간후  예약 완료
+echo 2시간후 예약 완료
 echo %DATE% %TIME%:  재부팅(g) 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2507,7 +2436,7 @@ goto shut
 :2h3slg
 cls
 shutdown -g -t 9000
-echo 2시간30분후  예약 완료
+echo 2시간30분후 예약 완료
 echo %DATE% %TIME%:  재부팅(g) 2시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2517,7 +2446,7 @@ goto shut
 :3hlg
 cls
 shutdown -g -t 10800
-echo 3시간후  예약 완료
+echo 3시간후 예약 완료
 echo %DATE% %TIME%:  재부팅(g) 3시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2554,7 +2483,7 @@ echo │ 5 : 2시간
 echo │ 6 : 2시간30분	
 echo │ 7 : 3시간
 echo │ 8 : 4시간
-echo │ 9 : 당장
+echo │ 9 : 즉시
 echo │
 echo │
 echo │
@@ -2578,7 +2507,7 @@ if %a%==11 goto
 :30r
 cls
 shutdown -r -t 1800
-echo 30분후  예약 완료
+echo 30분후 예약 완료
 echo %DATE% %TIME%:  재부팅 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2587,7 +2516,7 @@ goto shut
 :1hr
 cls
 shutdown -r -t 3600
-echo 1시간후  예약 완료
+echo 1시간후 예약 완료
 echo %DATE% %TIME%:  재부팅 1시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2596,7 +2525,7 @@ goto shut
 :1h3sr
 cls
 shutdown -r -t 5400
-echo 1시간30분후  예약 완료
+echo 1시간30분후 예약 완료
 echo %DATE% %TIME%:  재부팅 1시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2605,7 +2534,7 @@ goto shut
 :2hr
 cls
 shutdown -r -t 7200
-echo 2시간후  예약 완료
+echo 2시간후 예약 완료
 echo %DATE% %TIME%:  재부팅 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2614,7 +2543,7 @@ goto shut
 :2h3sr
 cls
 shutdown -r -t 9000
-echo 2시간30분후  예약 완료
+echo 2시간30분후 예약 완료
 echo %DATE% %TIME%:  재부팅 2시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2624,7 +2553,7 @@ goto shut
 :3hr
 cls
 shutdown -r -t 10800
-echo 3시간후  예약 완료
+echo 3시간후 예약 완료
 echo %DATE% %TIME%:  재부팅 3시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2660,7 +2589,7 @@ echo │ 5 : 2시간
 echo │ 6 : 2시간30분	
 echo │ 7 : 3시간
 echo │ 8 : 4시간
-echo │ 9 : 당장
+echo │ 9 : 즉시
 echo │
 echo │
 echo │
@@ -2684,7 +2613,7 @@ if %a%==11 goto
 :30h
 cls
 shutdown -h -t 1800
-echo 30분후  예약 완료
+echo 30분후 예약 완료
 echo %DATE% %TIME%:  절전모드 30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2694,7 +2623,7 @@ goto shut
 cls
 shutdown -h -t 3600
 echo %DATE% %TIME%:  절전모드 1시간 예약>>C:\BATprogram\BAT.txt
-echo 1시간후  예약 완료
+echo 1시간후 예약 완료
 pause
 cls
 goto shut
@@ -2702,7 +2631,7 @@ goto shut
 :1h3sh
 cls
 shutdown -h -t 5400
-echo 1시간30분후  예약 완료
+echo 1시간30분후 예약 완료
 echo %DATE% %TIME%:  절전모드 1시간30분 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2711,7 +2640,7 @@ goto shut
 :2hh
 cls
 shutdown -h -t 7200
-echo 2시간후  예약 완료
+echo 2시간후 예약 완료
 echo %DATE% %TIME%:  절전모드 2시간 예약>>C:\BATprogram\BAT.txt
 pause
 cls
@@ -2721,7 +2650,7 @@ goto shut
 cls
 shutdown -h -t 9000
 echo %DATE% %TIME%:  절전모드 2시간30분 예약>>C:\BATprogram\BAT.txt
-echo 2시간30분후  예약 완료
+echo 2시간30분후 예약 완료
 pause
 cls
 goto shut
@@ -2731,7 +2660,7 @@ goto shut
 cls
 shutdown -h -t 10800
 echo %DATE% %TIME%:  절전모드 3시간 예약>>C:\BATprogram\BAT.txt
-echo 3시간후  예약 완료
+echo 3시간후 예약 완료
 pause
 cls
 goto shut
@@ -2768,7 +2697,7 @@ echo │ 5 :
 echo │ 6 : 
 echo │ 7 : 
 echo │ 8 : 
-echo │ 9 : 당장
+echo │ 9 : 즉시
 echo │
 echo │
 echo │
@@ -2792,7 +2721,7 @@ if %a%==11 goto
 :30li
 cls
 shutdown -i -t 1800
-echo 30분후  예약 완료
+echo 30분후 예약 완료
 pause
 cls
 goto shut
@@ -2800,7 +2729,7 @@ goto shut
 :1hli
 cls
 shutdown -i -t 3600
-echo 1시간후  예약 완료
+echo 1시간후 예약 완료
 pause
 cls
 goto shut
@@ -2808,7 +2737,7 @@ goto shut
 :1h3sli
 cls
 shutdown -i -t 5400
-echo 1시간30분후  예약 완료
+echo 1시간30분후 예약 완료
 pause
 cls
 goto shut
@@ -2816,7 +2745,7 @@ goto shut
 :2hli
 cls
 shutdown -i -t 7200
-echo 2시간후  예약 완료
+echo 2시간후 예약 완료
 pause
 cls
 goto shut
@@ -2824,7 +2753,7 @@ goto shut
 :2h3sli
 cls
 shutdown -i -t 9000
-echo 2시간30분후  예약 완료
+echo 2시간30분후 예약 완료
 pause
 cls
 goto shut
@@ -2833,7 +2762,7 @@ goto shut
 :3hli
 cls
 shutdown -i -t 10800
-echo 3시간후  예약 완료
+echo 3시간후 예약 완료
 pause
 cls
 goto shut
@@ -2861,7 +2790,7 @@ echo %DATE% %TIME%:  개발자가 심심해서 만든 기능들 목록>>C:\BATprogram\BAT.txt
 echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        
 echo │
 echo │ 1 : 뒤로가기
-echo │ 2 : 문상 크랙기
+echo │ 2 : 문상 크래킹 시뮬
 echo │ 3 : CMD도배
 echo │ 4 : 앵무새                          
 echo │ 
@@ -2890,7 +2819,7 @@ if %a%==11 goto
 
 :parrot
 cls
-echo [앵무새]아무말이나 해봐요
+echo [앵무새]아무말이나 해보세요.
 echo %DATE% %TIME%:  앵무새 실행>>C:\BATprogram\BAT.txt
 goto parrot2
 
@@ -2902,7 +2831,7 @@ set /p a=원하는 말:
 
 echo.
 echo [앵무새]%a%
-echo %DATE% %TIME%:  앵무새에게 "%a%" 라고 말하셧 습니다.>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  앵무새에게 "%a%" 라고 말하셨습니다.>>C:\BATprogram\BAT.txt
 goto parrot2
 
 
@@ -2911,7 +2840,7 @@ goto parrot2
 :net
 echo %DATE% %TIME%:  net>>C:\BATprogram\BAT.txt
 cls
-echo 인터넷 연결을 해제 해버립니다.
+echo 인터넷 연결을 해제합니다.
 echo.
 echo 이 기능을 실행하고 복구명령을 실행하시려면
 echo 페이지 2 에서 43을 입력하세요. 
@@ -2971,23 +2900,17 @@ goto CMDdo3
 
 
 :CMDdo3 
-
-
-
-echo 안녕하시오?
-echo 도배기에 들어오시다니 반갑소
-echo 행운을 빌겠소 
-echo 맞춤법(?)
+echo 안녕하세요.
 
 goto CMDdo3
 
 
 :joclack
 cls
-echo %DATE% %TIME%:  문상 크랙기 실행 (장난용)>>C:\BATprogram\BAT.txt
+echo %DATE% %TIME%:  문상 크래킹>>C:\BATprogram\BAT.txt
 color 5a
 
-echo 문상 크랙기 86.886V
+echo 문상 크랙커 86.886V
 pause
 echo conecting to ccc1.kro.kr:2916
 timeout /t 1 > nul
@@ -2998,25 +2921,16 @@ timeout /t 2 > nul
 pause
 
 :random
-echo ??? %ramdom%
-pause
 color 0a
 mode 1000
 
 :A
 echo %random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%
-
-
-
-
 goto A
 
 :CMDms
 cls
-echo 명령어 사용법을 알고,사용 용도를 아시는분만
-echo 진행하시기 바랍니다.
-pause
-echo 명령어 사용법을 알고,사용 용도를 아시는분만
+echo 명령어 사용법을 알고, 사용 용도를 알고 있는 경우에
 echo 진행하시기 바랍니다.
 pause
 goto CMDs
@@ -3402,8 +3316,8 @@ echo ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 echo │
 echo │ 1.뒤로가기
 echo │ 2.CMD 테러
-echo │ 3.CMD 테러(매우강함)(권장 안 함)
-echo │ 4.폴더 테러기(절대 권장 안 함)
+echo │ 3.CMD 테러(권장 안 함)
+echo │ 4.폴더 테러기(권장 안 함)
 echo │ 5.인터넷 연결 해제
 echo │         
 echo │
@@ -3506,8 +3420,8 @@ goto Tr
 cls
 echo %DATE% %TIME%:  바탕화면 테러를 하시겠습니까?>>C:\BATprogram\BAT.txt
 echo 이 기능은 폴더를 생성하여 테러하는 방식 입니다. 
-echo 이 기능을 사용하고, 복구가 불가능할 수 있습니다.
-echo 이 기능을 사용하고 복구를 원하신다면 새로열린 복구 창을 절대 닫지 마세요.
+echo 이 기능을 사용할 경우, 복구하는데 어려움이 있을 수 있습니다.
+echo 이 기능을 사용하고 복구를 원하신다면 새로열린 복구 창을 닫지 말아주세요.
 echo.
 echo 윈도우탐색기의(explorer) 실행이 불가능해질 수 있습니다.
 echo.
@@ -3521,7 +3435,7 @@ if %a%==3 goto BThelp
 
 
 :BTgo
-echo 불러오는중(복구프로그램 실행및,파일 준비중)
+echo 불러오는중(복구프로그램 실행및, 파일 준비중)
 echo %DATE% %TIME%:   폴더 테러 실행>>C:\BATprogram\BAT.txt
 if not exist C:\BATprogram\BT.bat goto BTmaker
 cd C:\BATprogram
@@ -3530,7 +3444,7 @@ start BT.bat
 goto BTgogo1
 
 :BTmaker
-echo 알 수 없는 이유로 프로그램이 삭제되어있기때문에 다시 생성합니다.
+echo 프로그램을 다시 생성하는 중 입니다.
 C:
 cd BATprogram
 echo @echo off>C:\BATprogram\BT.bat
@@ -3574,12 +3488,12 @@ goto BT
 :BThelp
 cls
 echo %DATE% %TIME%:  바탕화면 테러 도움말 실행>>C:\BATprogram\BAT.txt
-echo 원하시는 폴더에 테러하시려면?
-echo 폴더의 경로를 입력하세요!
+echo 원하시는 폴더에 테러하려면
+echo 폴더의 경로를 입력하세요.
 echo.
-echo 바탕화면에 테러하려면?
+echo 바탕화면에 테러할 경우,
 echo 경로: C:\Users\유저이름\Desktop
-echo 사용자의 이름이 hello 라면,
+echo ex) 사용자의 이름이 hello일 경우,
 echo 경로는 C:\Users\hello\Deskop 입니다.
 
 pause
@@ -3719,9 +3633,9 @@ echo.
 echo.
 echo.
 echo.
-echo %b%님도 버그제보,추가기능 등을 제보하여
-echo 이 프로그램에 도움을 주실 수 있습니다.
-echo.
+echo %b%님도 버그제보, 추가기능 등을 제보하여
+echo 이 프로그램에 기여하실 수 있습니다.
+echo git : 
 echo.
 
 
