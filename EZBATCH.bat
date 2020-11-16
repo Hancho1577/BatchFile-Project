@@ -3655,11 +3655,11 @@ echo 초기실행 설정중입니다..
 echo 잠시만 기다려주세요.
 echo (복구용 파일을 준비중입니다..)
 C:
-md BATprogram
+md C:\BATprogram
 echo 간단프로그램LOG>C:\BATprogram\BAT.txt
 
 C:
-md batprogramreset
+md C:\batprogramreset
 echo @echo off>>C:\batprogramreset\reset.bat
 echo echo 잠시만 기다려주세요>>C:\batprogramreset\reset.bat
 echo timeout /t 3 > nul>>C:\batprogramreset\reset.bat
@@ -3672,7 +3672,7 @@ echo pause>>C:\batprogramreset\reset.bat
 
 
 C:
-cd BATprogram
+cd C:\BATprogram
 echo @echo off>C:\BATprogram\BT.bat
 echo echo 바탕화면테러를 복구하려면 아무키나 누르시오>>C:\BATprogram\BT.bat
 echo pause>>C:\BATprogram\BT.bat
