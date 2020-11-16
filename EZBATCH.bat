@@ -1,5 +1,5 @@
 @echo off
-set version=6.5
+set version=6.6
 C:
 color b
 if not exist "C:\BATprogram" goto help
